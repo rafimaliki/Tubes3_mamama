@@ -1,2 +1,0 @@
-/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/bin/Release/net8.0/win-x64/publish/AvaloniaApplication3.pdb
-/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/bin/Release/net8.0/win-x64/publish/AvaloniaApplication3.exe
