@@ -1,0 +1,74 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:AvaloniaApplication3.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="AvaloniaApplication3.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        CanResize="False"
+        Width="1000"
+        Height="720"
+        Background="Transparent"
+        TransparencyLevelHint="AcrylicBlur"
+        Title="Tugas Besar 3 Stima">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <SplitView
+        IsPaneOpen="{Binding IsPaneOpen, Mode=TwoWay}"
+        OpenPaneLength="200"
+        CompactPaneLength="80"
+        Background="Transparent"
+        PaneBackground="Transparent"
+        DisplayMode="CompactInline"
+        >
+        
+        <SplitView.Pane>
+            <Border
+                CornerRadius="10"
+                Background="#1e1e1e"
+                VerticalAlignment="Top"
+                Height="180"
+                Margin="10">
+                <StackPanel Margin="10"
+                            Spacing="5">
+                    <Button
+                        Command="{Binding TogglePane}">
+                        <PathIcon Data="{
+                        StaticResource LineHorizontal3Regular}"></PathIcon>
+                    </Button>
+                
+                    <Border CornerRadius="10">
+                        <ListBox ItemsSource="{Binding NavItems}" SelectedItem="{Binding SelectedNavItem}" Background="Transparent">
+                            <ListBox.Styles>
+                                <Style Selector="ListBoxItem:selected /template/ ContentPresenter">
+                                    <Setter Property="Background" Value="#2f2f2f"/>
+                                    <Setter Property="CornerRadius" Value="10"></Setter>
+                                </Style>
+                            </ListBox.Styles>
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                        <StackPanel Spacing="15" Orientation="Horizontal" Background="Transparent">
+                                            <PathIcon Data="{Binding Icon}"></PathIcon>
+                                            <TextBlock Text="{Binding Label}"></TextBlock>
+                                        </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </Border>
+                </StackPanel>
+            </Border>
+        </SplitView.Pane>
+        <SplitView.Content>
+            <TransitioningContentControl 
+                Content="{Binding CurrentPage}"></TransitioningContentControl>
+        </SplitView.Content>
+    </SplitView>
+
+</Window>
