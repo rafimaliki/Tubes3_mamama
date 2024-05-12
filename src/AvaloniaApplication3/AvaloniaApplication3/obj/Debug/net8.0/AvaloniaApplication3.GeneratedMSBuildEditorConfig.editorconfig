@@ -32,5 +32,8 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Files/Code/Kuliah/Sem4/StrategiAlgoritma/Tubes3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Files/Code/Kuliah/Sem4/StrategiAlgoritma/Tubes3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/ResultWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Files/Code/Kuliah/Sem4/StrategiAlgoritma/Tubes3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/SolverPageView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

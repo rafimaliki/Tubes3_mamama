@@ -9,6 +9,11 @@ using Avalonia.ReactiveUI;
 using AvaloniaApplication3.Utils;
 using AvaloniaApplication3.ViewModels;
 using ReactiveUI;
+using AvaloniaApplication3.Algorithm;
+using System;
+using System.IO;
+using System.Text;
+
 
 namespace AvaloniaApplication3.Views;
 
@@ -19,6 +24,8 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
     private RadioButton _option1;
     private RadioButton _option2;
     private Button _searchButton;
+    
+    private string input_img = "";
 
     public SolverPageView()
     {
@@ -52,6 +59,8 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
 
         _searchButton.Click += SearchButton_Click;
         _imageInputButton.Click += ImageInputButton_Click;
+
+        Database.Load();
     }
 
     private async void ImageInputButton_Click(object sender, RoutedEventArgs e)
@@ -68,7 +77,7 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
                     new(
                         "Image files")
                     {
-                        Patterns = new List<string> { "*.png", "*.jpg", "*.jpeg" }
+                        Patterns = new List<string> { "*.png", "*.jpg", "*.jpeg", "*.BMP" }
                     }
                 }
             }
@@ -83,13 +92,11 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
                 _imageDisplay.Source = bitmap;
             }
             
-            // byte[] b = File.ReadAllBytes(file.Path.ToString().Replace("file:", ""));
-            // var s = new StringBuilder();
-            // foreach (byte a in b)
-            //     s.Append(Convert.ToString(a, 2).PadLeft(8, '0'));
-            
-            // Convert image to ascii 8-bit binary
-            // Console.WriteLine(s)
+            byte[] b = File.ReadAllBytes(file.Path.ToString().Replace("file:///", ""));
+            Console.WriteLine(file.Path);
+            input_img = Encoding.GetEncoding("iso-8859-1").GetString(b);
+                
+            Console.WriteLine(input_img.Length);
         }
     }
 
@@ -104,5 +111,7 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
         {
             // Do something else
         }
+        
+        KMP.findMatch(input_img);
     }
 }
