@@ -11,6 +11,7 @@
         Width="1000"
         Height="720"
         Background="Transparent"
+        RequestedThemeVariant="Dark"
         TransparencyLevelHint="AcrylicBlur"
         Title="Tugas Besar 3 Stima">
 
