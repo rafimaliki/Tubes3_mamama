@@ -12,6 +12,7 @@ using ReactiveUI;
 using AvaloniaApplication3.Algorithm;
 using System;
 using System.IO;
+using System.Linq;
 using System.Text;
 
 
@@ -89,14 +90,14 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
             using (var stream = await file.OpenReadAsync())
             {
                 var bitmap = new Bitmap(stream);
+                
                 _imageDisplay.Source = bitmap;
             }
-            
-            byte[] b = File.ReadAllBytes(file.Path.ToString().Replace("file:///", ""));
-            Console.WriteLine(file.Path);
+
+            byte[] b = Utils.Utils.ConvertToBinary(file.Path.ToString());
             input_img = Encoding.GetEncoding("iso-8859-1").GetString(b);
                 
-            Console.WriteLine(input_img.Length);
+            // Console.WriteLine(input_img.Length);
         }
     }
 

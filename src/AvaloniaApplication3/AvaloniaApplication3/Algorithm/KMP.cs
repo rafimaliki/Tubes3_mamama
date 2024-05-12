@@ -2,6 +2,8 @@ using System;
 using System.Linq;
 using AvaloniaApplication3.Struct;
 using System.Collections.Generic;
+using System.Text;
+using AvaloniaApplication3.Utils;
 
 namespace AvaloniaApplication3.Algorithm;
 
@@ -54,6 +56,8 @@ public class KMP
             }
         }
         
+        Result._image = Utils.Utils.ConvertToBitmap(Encoding.GetEncoding("iso-8859-1").GetBytes(sidikJariList[0].berkas_citra));
+        
         Console.WriteLine("Compared: " + countCompare + " times");
         Console.WriteLine("Matched: " + countMatch + " times");
         Console.WriteLine("Similarity: " + (countMatch*100/countCompare) + "%");
@@ -63,6 +67,9 @@ public class KMP
         // end time
         DateTime endTime = DateTime.Now;
         TimeSpan timeDiff = endTime - startTime;
+        
+        Result.timeDiff = timeDiff;
+        Result.percentage = countMatch*100/countCompare;
         
         Console.WriteLine("Time elapsed: " + timeDiff.TotalMilliseconds + " ms");
         // System.Console.WriteLine("Name: " + sidikJariList[0].nama);

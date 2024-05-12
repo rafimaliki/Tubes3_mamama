@@ -1,3 +1,5 @@
+using AvaloniaApplication3.Utils;
+
 namespace AvaloniaApplication3.Algorithm;
 
 using System;
@@ -9,12 +11,12 @@ using AvaloniaApplication3.Struct;
 
 public class Database
 {
-    public static List<Biodata> BIODATA = new List<Biodata>();
+    public static List<People> BIODATA = new List<People>();
     public static List<SidikJari> SIDIK_JARI = new List<SidikJari>();
     
     public static void Load()
     {
-        string connStr = "Server=localhost;Database=tubes3asli;User=root;Password=password";
+        string connStr = "Server=localhost;Database=tubes3;User=root;Password=maulvi199227";
         using var cn = new MySqlConnection(connStr);
         cn.Open();
 
@@ -33,7 +35,7 @@ public class Database
         
         while (reader.Read())
         {   
-            Biodata biodata = new Biodata(reader["NIK"].ToString(), reader["nama"].ToString(), reader["tempat_lahir"].ToString(), reader["tanggal_lahir"].ToString(), reader["jenis_kelamin"].ToString(), reader["golongan_darah"].ToString(), reader["alamat"].ToString(), reader["agama"].ToString(), reader["status_perkawinan"].ToString(), reader["pekerjaan"].ToString(), reader["kewarganegaraan"].ToString());
+            People biodata = new People(reader["NIK"].ToString(), reader["nama"].ToString(), reader["tempat_lahir"].ToString(), reader["tanggal_lahir"].ToString(), reader["jenis_kelamin"].ToString(), reader["golongan_darah"].ToString(), reader["alamat"].ToString(), reader["agama"].ToString(), reader["status_perkawinan"].ToString(), reader["pekerjaan"].ToString(), reader["kewarganegaraan"].ToString());
             BIODATA.Add(biodata);
             
             // Console.WriteLine("\nNo: " + BIODATA.Count);

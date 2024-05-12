@@ -28,15 +28,15 @@
         
         <Grid Column="2" ColumnDefinitions="200, 300">
             <StackPanel Grid.Column="0" Background="Transparent" Margin="20 0 0 0 " VerticalAlignment="Center">
-                <Image Source="/Assets/1__M_Left_index_finger.BMP" HorizontalAlignment="Center"></Image>
+                <Image Source="{Binding Image}" HorizontalAlignment="Center"></Image>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
     
-                    <TextBlock Grid.Column="0"> ms </TextBlock>
-                    <TextBlock Grid.Column="1" HorizontalAlignment="Right"> %</TextBlock>
+                    <TextBlock Grid.Column="0" Text="{Binding TimeDiff}"> ms </TextBlock>
+                    <TextBlock Grid.Column="1" HorizontalAlignment="Right" Text="{Binding Percentage}"> %</TextBlock>
                 </Grid>
             </StackPanel>
             <Border Grid.Column="1" BorderThickness="1" BorderBrush="Wheat" Margin="20" CornerRadius="5" Padding="20" Background="Wheat">

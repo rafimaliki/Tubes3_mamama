@@ -4,6 +4,7 @@ namespace AvaloniaApplication3.Utils;
 
 public class People
 {
+    private string _nik;
     private string _nama;
     private string _tempat_lahir;
     private string _tanggal_lahir;
@@ -15,8 +16,9 @@ public class People
     private string _pekerjaan;
     private string _kewarganegaraan;
     
-    public People(string nama, string tempat_lahir, string tanggal_lahir, string jenis_kelamin, string golongan_darah, string alamat, string agama, string status_perkawinan, string pekerjaan, string kewarganegaraan)
+    public People(string nik, string nama, string tempat_lahir, string tanggal_lahir, string jenis_kelamin, string golongan_darah, string alamat, string agama, string status_perkawinan, string pekerjaan, string kewarganegaraan)
     {
+        _nik = nik;
         _nama = nama;
         _tempat_lahir = tempat_lahir;
         _tanggal_lahir = tanggal_lahir;
@@ -89,9 +91,12 @@ public class People
         set => _kewarganegaraan = value;
     }
     
+    public string Nik => _nik;
+    
     public override string ToString()
     {
-        return $"Nama: {Nama}\n" +
+        return $"NIK: {_nik}\n" +
+                $"Nama: {Nama}\n" +
                $"Tempat Lahir: {TempatLahir}\n" +
                $"Tanggal Lahir: {TanggalLahir}\n" +
                $"Jenis Kelamin: {JenisKelamin}\n" +
