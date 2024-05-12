@@ -3,6 +3,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using AvaloniaApplication3.ViewModels;
 using AvaloniaApplication3.Views;
+using AvaloniaApplication3.Utils;
 
 namespace AvaloniaApplication3;
 

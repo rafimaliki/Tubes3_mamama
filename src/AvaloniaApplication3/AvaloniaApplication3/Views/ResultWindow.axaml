@@ -1,0 +1,50 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:AvaloniaApplication3.ViewModels"
+        mc:Ignorable="d"
+        Width="500"
+        Height="300"
+        x:Class="AvaloniaApplication3.Views.ResultWindow"
+        x:DataType="viewModels:ResultWindowViewModel"
+        Title="MusicStoreWindow"
+        TransparencyLevelHint="AcrylicBlur"
+        ExtendClientAreaToDecorationsHint="True">
+    <Design.DataContext>
+        <viewModels:ResultWindowViewModel/>
+    </Design.DataContext>
+    
+    <Panel>
+        <ExperimentalAcrylicBorder IsHitTestVisible="False">
+            <ExperimentalAcrylicBorder.Material>
+                <ExperimentalAcrylicMaterial
+                    BackgroundSource="Digger"
+                    TintColor="Black"
+                    TintOpacity="1"
+                    MaterialOpacity="0.65" />
+            </ExperimentalAcrylicBorder.Material>
+        </ExperimentalAcrylicBorder>
+        
+        <Grid Column="2" ColumnDefinitions="200, 300">
+            <StackPanel Grid.Column="0" Background="Transparent" Margin="20 0 0 0 " VerticalAlignment="Center">
+                <Image Source="/Assets/1__M_Left_index_finger.BMP" HorizontalAlignment="Center"></Image>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+    
+                    <TextBlock Grid.Column="0"> ms </TextBlock>
+                    <TextBlock Grid.Column="1" HorizontalAlignment="Right"> %</TextBlock>
+                </Grid>
+            </StackPanel>
+            <Border Grid.Column="1" BorderThickness="1" BorderBrush="Wheat" Margin="20" CornerRadius="5" Padding="20" Background="Wheat">
+                <TextBlock Foreground="Black" Text="{Binding Text}" LineSpacing="4">
+                </TextBlock>
+            </Border>
+        </Grid>
+
+        <Panel Margin="40" />
+    </Panel>
+</Window>
