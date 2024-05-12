@@ -8,7 +8,17 @@ using System.IO;
 using System.Linq;
 using Avalonia.Platform.Storage;
 
+using System;
+using System.Drawing;
+using System.Runtime.InteropServices;
+using System.Text;
+
+using AvaloniaApplication3.Algorithm;
+
+
+
 namespace AvaloniaApplication3.Views
+
 {
     public partial class SolverPageView : UserControl
     {
@@ -17,10 +27,13 @@ namespace AvaloniaApplication3.Views
         private RadioButton _option2;
         private Button _searchButton;
         private Button _imageInputButton;
+        
+        private string input_img;
 
         public SolverPageView()
         {
             InitializeComponent();
+            Database.Load();
         }
 
         private void InitializeComponent()
@@ -51,7 +64,7 @@ namespace AvaloniaApplication3.Views
                         new FilePickerFileType(
                             "Image files")
                         {
-                            Patterns = new List<string> { "*.png", "*.jpg", "*.jpeg" }
+                            Patterns = new List<string> { "*.png", "*.jpg", "*.jpeg", "*.BMP" }
                         }
                     }
                 }
@@ -60,11 +73,16 @@ namespace AvaloniaApplication3.Views
             if ( files.Count > 0 )
             {
                 var file = files[0];
-                Stream stream = await file.OpenReadAsync();
-                var bitmap = new Bitmap(stream);
+                Stream stream = await file.OpenReadAsync(); 
+                Bitmap bitmap = new Bitmap(stream);
                 _imageDisplay.Source = bitmap;
                 
                 // Console the image as binary
+                byte[] b = File.ReadAllBytes(file.Path.ToString().Replace("file:///", ""));
+                Console.WriteLine(file.Path);
+                input_img = Encoding.GetEncoding("iso-8859-1").GetString(b);
+                
+                Console.WriteLine(input_img.Length);
             }
         }
         
@@ -77,9 +95,10 @@ namespace AvaloniaApplication3.Views
             else if (_option2.IsChecked.Value)
             {
                 // Do something else
-            } 
-            
-            Console.WriteLine("Search button clicked");
+            }
+
+            KMP.findMatch(input_img);
+            // Console.WriteLine("Search button clicked");
         }
     }
 }

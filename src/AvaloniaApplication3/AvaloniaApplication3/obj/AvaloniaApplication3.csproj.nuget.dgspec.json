@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Files\\Code\\Kuliah\\Sem4\\StrategiAlgoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj": {}
+  },
+  "projects": {
+    "C:\\Files\\Code\\Kuliah\\Sem4\\StrategiAlgoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Files\\Code\\Kuliah\\Sem4\\StrategiAlgoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj",
+        "projectName": "AvaloniaApplication3",
+        "projectPath": "C:\\Files\\Code\\Kuliah\\Sem4\\StrategiAlgoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj",
+        "packagesPath": "C:\\Users\\Rafi\\.nuget\\packages\\",
+        "outputPath": "C:\\Files\\Code\\Kuliah\\Sem4\\StrategiAlgoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Rafi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[11.0.10, )"
+            },
+            "Avalonia.Desktop": {
+              "target": "Package",
+              "version": "[11.0.10, )"
+            },
+            "Avalonia.Diagnostics": {
+              "target": "Package",
+              "version": "[11.0.10, )"
+            },
+            "Avalonia.Fonts.Inter": {
+              "target": "Package",
+              "version": "[11.0.10, )"
+            },
+            "Avalonia.ReactiveUI": {
+              "target": "Package",
+              "version": "[11.0.10, )"
+            },
+            "Avalonia.Themes.Fluent": {
+              "target": "Package",
+              "version": "[11.0.10, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.3.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
