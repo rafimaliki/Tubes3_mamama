@@ -4,5 +4,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="AvaloniaApplication3.Views.HomePageView">
-  HomePage
+  <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+      <Image Source="/Assets/logo.png" Height="300" Width="300">
+          <Image.Effect>
+              <DropShadowEffect Color="White" BlurRadius="100" OffsetX="0" OffsetY="0" Opacity="50"/>
+          </Image.Effect>
+      </Image>
+      
+      <TextBlock TextWrapping="Wrap" TextAlignment="Center" Foreground="White" Padding="10" >
+          The Desktop Application for Fingerprint Matching is designed to provideefficient and accurate fingerprint recognition using three different string matching algorithms: Knuth-Morris-Pratt (KMP), Boyer-Moore (BM), and a hybrid approach combining KMP and BM. Fingerprint recognition is a critical component in biometric authentication systems, commonly used for security purposes in various industries including law enforcement, access control, and personal devices. By integrating these algorithms into a user-friendly desktop application, users can perform fingerprint matching tasks with ease and reliability.
+      </TextBlock>
+  </StackPanel>
 </UserControl>

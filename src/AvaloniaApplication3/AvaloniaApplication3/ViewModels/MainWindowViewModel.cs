@@ -1,16 +1,34 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Reactive.Linq;
+using System.Windows.Input;
 using Avalonia;
+using Avalonia.Interactivity;
 using Avalonia.Media;
 using Avalonia.Styling;
+using Microsoft.VisualBasic;
 using ReactiveUI;
 
 namespace AvaloniaApplication3.ViewModels
 {
-    public class MainWindowViewModel : ReactiveObject
+    public class MainWindowViewModel : ViewModelBase
     {
         private bool _isPaneOpen = false;
         private ViewModelBase _currentPage = new HomePageViewModel();
+        
+        public MainWindowViewModel()
+        {
+            ShowDialog = new Interaction<ResultWindowViewModel, EmptyPageViewModel?>();
+            
+           OpenWindowCommand = ReactiveCommand.CreateFromTask( async () =>
+            {
+                var store = new ResultWindowViewModel();
+                var result = await ShowDialog.Handle(store);
+            });
+        }
+        
+        public ICommand OpenWindowCommand { get; }
+        public Interaction<ResultWindowViewModel, EmptyPageViewModel?> ShowDialog { get; }
 
         public bool IsPaneOpen
         {
@@ -46,7 +64,6 @@ namespace AvaloniaApplication3.ViewModels
             }
         }
         
-        
         public ObservableCollection<ListItemTemplate> NavItems { get; } = new ()
         {
             new ListItemTemplate(typeof(HomePageViewModel), "BroadActivityFeedRegular"),
@@ -71,7 +88,5 @@ namespace AvaloniaApplication3.ViewModels
             Icon = (StreamGeometry) result;
 
         }
-        
-        
     }
 }
