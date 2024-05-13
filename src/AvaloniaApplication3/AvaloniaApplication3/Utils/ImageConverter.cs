@@ -1,15 +1,24 @@
-using System.Runtime.InteropServices;
+using System;
+
 namespace AvaloniaApplication3.Utils;
 using System.Drawing;
 using Emgu.CV;
 using Emgu.CV.CvEnum;
 
+
 public class ImageConverter
 {
     public static byte[] PreprocessImage(string imagePath)
     {
+        string path = imagePath.Replace("file:///", "");
+        
+        // Handle for macOS
+        if (path[0] != '/' && Environment.OSVersion.Platform == PlatformID.Unix)
+        {
+            path = "/" + path;
+        }
         // Load image
-        Mat image = CvInvoke.Imread(imagePath);
+        Mat image = CvInvoke.Imread(path);
         
         // Convert image to grayscale
         Mat gray = new Mat();
@@ -22,11 +31,16 @@ public class ImageConverter
         // Convert to binary
         Mat binary = new Mat();
         CvInvoke.Threshold(resized, binary, 127, 255, ThresholdType.Binary);
-
-        // Convert Mat to byte array
-        byte[] imageData = new byte[binary.Width * binary.Height];
-        Marshal.Copy(binary.DataPointer, imageData, 0, imageData.Length);
-
+        
+        // Save the image
+        CvInvoke.Imwrite("test.bmp", binary);
+        
+        // Convert the image to byte array
+        byte[] imageData = System.IO.File.ReadAllBytes("test.bmp");
+        
+        // Delete the image
+        System.IO.File.Delete("test.bmp");
+        
         return imageData;
     }
 }

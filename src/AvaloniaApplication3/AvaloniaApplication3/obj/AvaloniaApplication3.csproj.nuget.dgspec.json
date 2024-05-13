@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Files\\Code\\Kuliah\\Sem4\\StrategiAlgoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj": {}
+    "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj": {}
   },
   "projects": {
-    "C:\\Files\\Code\\Kuliah\\Sem4\\StrategiAlgoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj": {
+    "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Files\\Code\\Kuliah\\Sem4\\StrategiAlgoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj",
+        "projectUniqueName": "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj",
         "projectName": "AvaloniaApplication3",
-        "projectPath": "C:\\Files\\Code\\Kuliah\\Sem4\\StrategiAlgoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj",
-        "packagesPath": "C:\\Users\\Rafi\\.nuget\\packages\\",
-        "outputPath": "C:\\Files\\Code\\Kuliah\\Sem4\\StrategiAlgoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\obj\\",
+        "projectPath": "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj",
+        "packagesPath": "/Users/maulvizm/.nuget/packages/",
+        "outputPath": "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rafi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/maulvizm/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -66,6 +66,14 @@
               "target": "Package",
               "version": "[4.9.0.5494, )"
             },
+            "Emgu.CV.runtime.mini.macos": {
+              "target": "Package",
+              "version": "[4.9.0.5494, )"
+            },
+            "Emgu.CV.runtime.mini.windows": {
+              "target": "Package",
+              "version": "[4.9.0.5494, )"
+            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[2.3.7, )"
@@ -91,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

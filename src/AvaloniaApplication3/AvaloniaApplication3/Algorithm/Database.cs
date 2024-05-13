@@ -17,7 +17,7 @@ public class Database
     
     public static void Load()
     {
-        string connStr = "Server=localhost;Database=tubes3alay;User=root;Password=password";
+        string connStr = "Server=localhost;Database=tubes3;User=root;Password=password;";
         using var cn = new MySqlConnection(connStr);
         cn.Open();
 

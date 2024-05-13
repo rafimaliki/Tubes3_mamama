@@ -1,5 +1,4 @@
 using System;
-using System.Text;
 using Avalonia.Media.Imaging;
 
 namespace AvaloniaApplication3.Utils;
@@ -10,11 +9,12 @@ public class Utils
     public static byte[] ConvertToBinary(string filePah)
     {
         string path = filePah.Replace("file:///", "");
-
-        // if (path[0] != '/')
-        // {
-        //     path = "/" + path;
-        // }
+        
+        // Handle for macOS
+        if (path[0] != '/' && Environment.OSVersion.Platform == PlatformID.Unix)
+        {
+            path = "/" + path;
+        }
 
         byte[] b = File.ReadAllBytes(path);
 

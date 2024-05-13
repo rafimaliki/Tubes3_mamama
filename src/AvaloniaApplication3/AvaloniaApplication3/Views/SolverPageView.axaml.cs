@@ -6,13 +6,9 @@ using Avalonia.Markup.Xaml;
 using Avalonia.Media.Imaging;
 using Avalonia.Platform.Storage;
 using Avalonia.ReactiveUI;
-using AvaloniaApplication3.Utils;
 using AvaloniaApplication3.ViewModels;
 using ReactiveUI;
 using AvaloniaApplication3.Algorithm;
-using System;
-using System.IO;
-using System.Linq;
 using System.Text;
 
 
@@ -94,7 +90,7 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
                 _imageDisplay.Source = bitmap;
             }
 
-            byte[] b = Utils.Utils.ConvertToBinary(file.Path.ToString());
+            byte[] b = Utils.ImageConverter.PreprocessImage(file.Path.ToString());
             input_img = Encoding.GetEncoding("iso-8859-1").GetString(b);
                 
             // Console.WriteLine(input_img.Length);
