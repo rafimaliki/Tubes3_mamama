@@ -4,6 +4,7 @@ using AvaloniaApplication3.Struct;
 using System.Collections.Generic;
 using System.Text;
 using AvaloniaApplication3.Utils;
+using static AvaloniaApplication3.Algorithm.MyRegex;
 
 namespace AvaloniaApplication3.Algorithm;
 
@@ -29,38 +30,41 @@ public class KMP
         
         int loop = 0;
         
-        // while (sidikJariList.Count != 1 && prevLen != newLen && loop*setSize < patternLength/2)
-        // {   
-        //     string currentSet = pattern.Substring(patternLength/2+loop*setSize, setSize);
-        //     prevLen = sidikJariList.Count;
-        //     
-        //     sidikJariList = sidikJariList.Where(sidikJari => match(sidikJari.berkas_citra, currentSet)).ToList();
-        //     
-        //     newLen = sidikJariList.Count;
-        //     patternLength = newLen;
-        //     loop++;
-        // }
+        while (sidikJariList.Count != 1 && prevLen != newLen && loop*setSize < patternLength/2)
+        {   
+            string currentSet = pattern.Substring(patternLength/2+loop*setSize, setSize);
+            prevLen = sidikJariList.Count;
+
+            sidikJariList = sidikJariList.Where(sidikJari => match(sidikJari.berkas_citra, currentSet)).ToList();
+            
+            newLen = sidikJariList.Count;
+            patternLength = newLen;
+            loop++;
+        }
+        
+        // Console.WriteLine("input len: " + pattern.Length);
+        // Console.WriteLine("pattern: " + pattern);
 
         int countMatch = 0;
         int countCompare = 0;
         
-        for (int i = 0; i < pattern.Length - setSize; i = i + setSize)
-        {  
-            countCompare++;
-            string currentSet = pattern.Substring(i, setSize);
-            bool isFound = match(sidikJariList[0].berkas_citra, currentSet);
-            if (isFound)
-            {
-                // Console.WriteLine("source idx: " + i + " - " + (i+setSize));
-                countMatch++;
-            }
-        }
-        
+        // for (int i = 0; i < pattern.Length - setSize; i = i + setSize)
+        // {  
+        //     countCompare++;
+        //     string currentSet = pattern.Substring(i, setSize);
+        //     bool isFound = match(sidikJariList[0].berkas_citra, currentSet);
+        //     if (isFound)
+        //     {
+        //         // Console.WriteLine("source idx: " + i + " - " + (i+setSize));
+        //         countMatch++;
+        //     }
+        // }
+        Console.WriteLine(sidikJariList.Count);
         Result._image = Utils.Utils.ConvertToBitmap(Encoding.GetEncoding("iso-8859-1").GetBytes(sidikJariList[0].berkas_citra));
         
-        Console.WriteLine("Compared: " + countCompare + " times");
-        Console.WriteLine("Matched: " + countMatch + " times");
-        Console.WriteLine("Similarity: " + (countMatch*100/countCompare) + "%");
+        // Console.WriteLine("Compared: " + countCompare + " times");
+        // Console.WriteLine("Matched: " + countMatch + " times");
+        // Console.WriteLine("Similarity: " + (countMatch*100/countCompare) + "%");
         
         // Console.WriteLine(sidikJari.berkas_citra.Length);
         
@@ -69,10 +73,27 @@ public class KMP
         TimeSpan timeDiff = endTime - startTime;
         
         Result.timeDiff = timeDiff;
-        Result.percentage = countMatch*100/countCompare;
+        // Result.percentage = countMatch*100/countCompare;
+        Result.percentage = 0;
         
         Console.WriteLine("Time elapsed: " + timeDiff.TotalMilliseconds + " ms");
         // System.Console.WriteLine("Name: " + sidikJariList[0].nama);
+        foreach (Utils.People biodata in Database.BIODATA)
+        {
+            try
+            {
+                if (MyRegex.match(biodata.Nama, sidikJariList[0].nama))
+                {
+                    biodata.Nama = sidikJariList[0].nama;
+                    biodata.print();
+                    break;
+                }
+            } catch (Exception e){
+                // Console.WriteLine(e.Message);
+                // Console.WriteLine(biodata.Nama);
+            }
+           
+        }
     }
     public static bool match(string t, string p)
     {   

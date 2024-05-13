@@ -11,10 +11,10 @@ public class Utils
     {
         string path = filePah.Replace("file:///", "");
 
-        if (path[0] != '/')
-        {
-            path = "/" + path;
-        }
+        // if (path[0] != '/')
+        // {
+        //     path = "/" + path;
+        // }
 
         byte[] b = File.ReadAllBytes(path);
 

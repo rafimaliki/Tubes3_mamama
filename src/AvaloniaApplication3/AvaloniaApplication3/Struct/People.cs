@@ -1,3 +1,4 @@
+using System;
 using Avalonia.Media.Imaging;
 
 namespace AvaloniaApplication3.Utils;
@@ -106,5 +107,20 @@ public class People
                $"Status Perkawinan: {StatusPerkawinan}\n" +
                $"Pekerjaan: {Pekerjaan}\n" +
                $"Kewarganegaraan: {Kewarganegaraan}";
+    }
+    
+    public void print ()
+    {
+        Console.WriteLine("NIK :" + _nik);
+        Console.WriteLine("Nama :" + _nama);
+        Console.WriteLine("Tempat Lahir :" + _tempat_lahir);
+        Console.WriteLine("Tanggal Lahir :" + _tanggal_lahir);
+        Console.WriteLine("Jenis Kelamin :" + _jenis_kelamin);
+        Console.WriteLine("Golongan Darah :" + _gologan_darah);
+        Console.WriteLine("Alamat :" + _alamat);
+        Console.WriteLine("Agama :" + _agama);
+        Console.WriteLine("Status Perkawinan :" + _status_perkawinan);
+        Console.WriteLine("Pekerjaan :" + _pekerjaan);
+        Console.WriteLine("Kewarganegaraan :" + _kewarganegaraan);
     }
 }

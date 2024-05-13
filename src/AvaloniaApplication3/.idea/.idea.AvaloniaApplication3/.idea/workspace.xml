@@ -8,18 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8e28b48-2b2c-4044-89ac-5025ddbcef77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AvaloniaApplication3/Utils/ImageConverter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AvaloniaApplication3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AvaloniaApplication3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/Database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/Database.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/KMP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/KMP.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/AvaloniaApplication3.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/AvaloniaApplication3.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Struct/Biodata.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Utils/People.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Struct/People.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Utils/Result.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Utils/Result.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Utils/Utils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Utils/Utils.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/ViewModels/ResultWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/ViewModels/ResultWindowViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Views/ResultWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Views/ResultWindow.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Views/SolverPageView.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Views/SolverPageView.axaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.g.targets" afterDir="false" />
@@ -80,27 +70,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.AvaloniaApplication3.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "merge",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.AvaloniaApplication3.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;merge&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys_rider&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Rafi\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Rafi\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Rafi\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Rafi\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Rafi\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Rafi\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="AvaloniaApplication3" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -137,6 +127,7 @@
       <workItem from="1715438812297" duration="10978000" />
       <workItem from="1715479501753" duration="2900000" />
       <workItem from="1715529926715" duration="179000" />
+      <workItem from="1715531740747" duration="2360000" />
     </task>
     <servers />
   </component>

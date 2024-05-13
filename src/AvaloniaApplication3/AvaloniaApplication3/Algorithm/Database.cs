@@ -4,6 +4,7 @@ namespace AvaloniaApplication3.Algorithm;
 
 using System;
 using System.Collections.Generic;
+using static AvaloniaApplication3.Algorithm.MyRegex;
 
 using MySqlConnector;
 
@@ -16,7 +17,7 @@ public class Database
     
     public static void Load()
     {
-        string connStr = "Server=localhost;Database=tubes3;User=root;Password=maulvi199227";
+        string connStr = "Server=localhost;Database=tubes3alay;User=root;Password=password";
         using var cn = new MySqlConnection(connStr);
         cn.Open();
 
@@ -58,6 +59,17 @@ public class Database
         {   
             SidikJari sidikJari = new SidikJari(reader["berkas_citra"].ToString(), reader["nama"].ToString());
             SIDIK_JARI.Add(sidikJari);
+
+            // String newNama = sidikJari.nama + "jjjj";
+            //
+            // if (MyRegex.match(sidikJari.nama,newNama))
+            // {
+            //     Console.WriteLine("Match!");
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Not Match!");
+            // }
             
             // Console.WriteLine("\nNo: " + SIDIK_JARI.Count);
             // Console.WriteLine("Nama: " + sidikJari.nama);
