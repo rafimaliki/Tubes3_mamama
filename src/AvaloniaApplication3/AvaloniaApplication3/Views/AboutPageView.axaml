@@ -3,7 +3,36 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             Width="800" Height="450"
              x:Class="AvaloniaApplication3.Views.AboutPageView">
     
-    About
+        <StackPanel Orientation="Vertical" Spacing="30" VerticalAlignment="Stretch" Margin="30">
+            <Border Background="SlateGray" CornerRadius="10">
+                <Grid ColumnDefinitions="100, *" Width="">
+                    <Image Grid.Column="0" Source="../Assets/avalonia-logo.ico" Margin="10"></Image>
+                    <StackPanel Grid.Column="1">
+                        <TextBlock>Nama </TextBlock>
+                        <TextBlock>NIM </TextBlock>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <Border Background="SlateGray" CornerRadius="10">
+                <Grid ColumnDefinitions="100, *" Width="">
+                    <Image Grid.Column="0" Source="../Assets/avalonia-logo.ico" Margin="10"></Image>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="15">
+                        <TextBlock>Nama </TextBlock>
+                        <TextBlock>NIM </TextBlock>
+                    </StackPanel> 
+                </Grid>
+            </Border>
+            <Border Background="SlateGray" CornerRadius="10">
+                <Grid ColumnDefinitions="100, *" Width="">
+                    <Image Grid.Column="0" Source="../Assets/avalonia-logo.ico" Margin="10"></Image>
+                    <StackPanel Grid.Column="1">
+                        <TextBlock>Nama </TextBlock>
+                        <TextBlock>NIM </TextBlock>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
 </UserControl>
