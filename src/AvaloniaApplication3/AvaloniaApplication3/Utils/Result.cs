@@ -38,8 +38,18 @@ public class Result
         Text = text;
     }
     
-    public void createNewPeople(string nik, string nama, string tempat_lahir, string tanggal_lahir, string jenis_kelamin, string golongan_darah, string alamat, string agama, string status_perkawinan, string pekerjaan, string kewarganegaraan)
+    public static void createNewPeople(People people)
     {
-        People = new People(nik, nama, tempat_lahir, tanggal_lahir, jenis_kelamin, golongan_darah, alamat, agama, status_perkawinan, pekerjaan, kewarganegaraan);
+        _people = people;
+    }
+
+    public static void setName(String nama)
+    {
+        _people.Nama = nama;
+    }
+    
+    public static void setPercentage(int percentage)
+    {
+        Result.percentage = percentage;
     }
 }

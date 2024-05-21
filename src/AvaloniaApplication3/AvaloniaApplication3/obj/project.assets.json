@@ -5041,11 +5041,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Files\\Code\\Kuliah\\Sem4\\StrategiAlgoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj",
+      "projectUniqueName": "C:\\Files\\Source-Code\\Kuliah\\Semester-IV\\IF2211-Srategi_Algoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj",
       "projectName": "AvaloniaApplication3",
-      "projectPath": "C:\\Files\\Code\\Kuliah\\Sem4\\StrategiAlgoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj",
+      "projectPath": "C:\\Files\\Source-Code\\Kuliah\\Semester-IV\\IF2211-Srategi_Algoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj",
       "packagesPath": "C:\\Users\\Rafi\\.nuget\\packages\\",
-      "outputPath": "C:\\Files\\Code\\Kuliah\\Sem4\\StrategiAlgoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\obj\\",
+      "outputPath": "C:\\Files\\Source-Code\\Kuliah\\Semester-IV\\IF2211-Srategi_Algoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rafi\\AppData\\Roaming\\NuGet\\NuGet.Config"

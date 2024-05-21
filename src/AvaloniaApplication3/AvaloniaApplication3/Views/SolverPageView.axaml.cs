@@ -13,6 +13,7 @@ using AvaloniaApplication3.Algorithm;
 using System;
 using System.IO;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 
 
@@ -106,13 +107,16 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
     {
         if (_option1.IsChecked.Value)
         {
-            // Do something
+            HammingDist.findMatch(input_img);
+            // Console.WriteLine("Search using KMP ");
+            // bool found = KMP.findMatch(input_img);
+            //
+            // if (!found) LVHS.findMatch(input_img);
         }
         else if (_option2.IsChecked.Value)
         {
             // Do something else
         }
         
-        KMP.findMatch(input_img);
     }
 }
