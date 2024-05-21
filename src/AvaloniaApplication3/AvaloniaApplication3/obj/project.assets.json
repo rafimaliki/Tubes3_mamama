@@ -5294,11 +5294,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj",
+      "projectUniqueName": "/Users/maulvizm/Documents/GitHub/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj",
       "projectName": "AvaloniaApplication3",
-      "projectPath": "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj",
+      "projectPath": "/Users/maulvizm/Documents/GitHub/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj",
       "packagesPath": "/Users/maulvizm/.nuget/packages/",
-      "outputPath": "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/obj/",
+      "outputPath": "/Users/maulvizm/Documents/GitHub/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/maulvizm/.nuget/NuGet/NuGet.Config"
