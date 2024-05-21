@@ -23,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +40,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "maulvi-zm"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/rafimaliki/Tubes3_mamama.git",
+    "accountId": "6f1707cc-59c4-4556-b035-6069574605da"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/238ba4106a394a7e8becf043d20c11dbdc200/09/7af17fb5/Mat.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/64c077c15772bb4c699bdf49a561c536eb480867eabb4544519519e287c16/FilePickerOpenOptions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -50,6 +61,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ba3ea9c1caf09c71e5e1a6f29cc110e55f6baaeffa8a3c2a8743035da53a0ce/FilePickerFileType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Utils/Result.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Utils/Result.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
@@ -84,9 +97,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\Rafi\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Rafi\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Rafi\\AppData\\Local\\Symbols\\src"
+      "/Users/maulvizm/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
+      "/Users/maulvizm/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
+      "/Users/maulvizm/Library/Application Support/Symbols/src"
     ]
   }
 }]]></component>
@@ -127,7 +140,17 @@
       <workItem from="1715479501753" duration="2900000" />
       <workItem from="1715529926715" duration="179000" />
       <workItem from="1715531740747" duration="2360000" />
+      <workItem from="1716197830174" duration="281000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: image converter">
+      <option name="closed" value="true" />
+      <created>1715572673734</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715572673734</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +160,7 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="feat: image converter" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: image converter" />
   </component>
 </project>
