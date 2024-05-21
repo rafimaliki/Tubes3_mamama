@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h0b4pykXQJn7P5DZofBd5SW71gFgagiglS/KdTYf1rpmRed9XMK+pMw/rlybHqGGiPwsc+FKWdk56XnXM2aNfA==",
+  "dgSpecHash": "5cAVDx1YlJu6iEvuV8K3mvXprqqvWvMGW9V6wXHA6os5aC+uOE+QHo0QnOznQejvy3yqXTKpNKDRQBl3LvCZ6w==",
   "success": true,
-  "projectFilePath": "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj",
+  "projectFilePath": "/Users/maulvizm/Documents/GitHub/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj",
   "expectedPackageFiles": [
     "/Users/maulvizm/.nuget/packages/avalonia/11.0.10/avalonia.11.0.10.nupkg.sha512",
     "/Users/maulvizm/.nuget/packages/avalonia.angle.windows.natives/2.1.0.2023020321/avalonia.angle.windows.natives.2.1.0.2023020321.nupkg.sha512",
