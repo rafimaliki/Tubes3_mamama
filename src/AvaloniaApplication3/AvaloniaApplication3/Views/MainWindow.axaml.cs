@@ -10,6 +10,6 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        Database.Load();
+        // Database.Load();
     }
 }

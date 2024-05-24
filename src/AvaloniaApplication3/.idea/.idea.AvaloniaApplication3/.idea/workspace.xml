@@ -10,7 +10,10 @@
     <list default="true" id="f8e28b48-2b2c-4044-89ac-5025ddbcef77" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AvaloniaApplication3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AvaloniaApplication3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/Database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/Database.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Assets/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Assets/bg3.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Views/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Views/MainWindow.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Views/SolverPageView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Views/SolverPageView.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Views/SolverPageView.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Views/SolverPageView.axaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
@@ -23,6 +26,7 @@
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,38 +39,31 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../.." value="merge" />
+        <entry key="$PROJECT_DIR$/../.." value="algorithm" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "maulvi-zm"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;maulvi-zm&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/rafimaliki/Tubes3_mamama.git",
-    "accountId": "6f1707cc-59c4-4556-b035-6069574605da"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rafimaliki/Tubes3_mamama.git&quot;,
+    &quot;accountId&quot;: &quot;40c74e95-1751-4a58-a228-b35ebf5b95e2&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/238ba4106a394a7e8becf043d20c11dbdc200/09/7af17fb5/Mat.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/64c077c15772bb4c699bdf49a561c536eb480867eabb4544519519e287c16/FilePickerOpenOptions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/81cdf5d17ce298f51afeafe29d5638cb4a2ade9c1a31ce6c35a8126a7b9d0/ReactiveObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8717832985c1a72e11b8cb5ec2956a43327bdf840f5e917489df66c8528daf8/Border.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a33d23577abb55ce1b2985eb9d6597a7af7fc795b892b970573349fe1bd3/DropShadowEffect.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ba3ea9c1caf09c71e5e1a6f29cc110e55f6baaeffa8a3c2a8743035da53a0ce/FilePickerFileType.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Utils/Result.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Utils/Result.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Shabrina Maharani/Documents/4th sem/STIMA/tubes/TUBES3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/SolverPageView.axaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Shabrina Maharani/Documents/4th sem/STIMA/tubes/TUBES3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/SolverPageView.axaml.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -82,27 +79,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.AvaloniaApplication3.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "front-end",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.AvaloniaApplication3.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;front-end&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.maddyhome.idea.vim.ui.VimEmulationConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/maulvizm/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
-      "/Users/maulvizm/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
-      "/Users/maulvizm/Library/Application Support/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Shabrina Maharani\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Shabrina Maharani\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Shabrina Maharani\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="AvaloniaApplication3" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -141,6 +138,8 @@
       <workItem from="1715529926715" duration="179000" />
       <workItem from="1715531740747" duration="2360000" />
       <workItem from="1716197830174" duration="281000" />
+      <workItem from="1716300355497" duration="114000" />
+      <workItem from="1716300526088" duration="19323000" />
     </task>
     <task id="LOCAL-00001" summary="feat: image converter">
       <option name="closed" value="true" />
@@ -158,6 +157,17 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="feat: image converter" />

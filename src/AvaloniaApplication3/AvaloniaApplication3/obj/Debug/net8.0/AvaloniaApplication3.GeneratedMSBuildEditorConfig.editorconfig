@@ -13,27 +13,27 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AvaloniaApplication3
-build_property.ProjectDir = /Users/maulvizm/Documents/GitHub/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/
+build_property.ProjectDir = C:\Users\Shabrina Maharani\Documents\4th sem\STIMA\tubes\TUBES3\Tubes3_mamama\src\AvaloniaApplication3\AvaloniaApplication3\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[/Users/maulvizm/Documents/GitHub/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/App.axaml]
+[C:/Users/Shabrina Maharani/Documents/4th sem/STIMA/tubes/TUBES3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/maulvizm/Documents/GitHub/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Assets/icons.axaml]
+[C:/Users/Shabrina Maharani/Documents/4th sem/STIMA/tubes/TUBES3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Assets/icons.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/maulvizm/Documents/GitHub/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/AboutPageView.axaml]
+[C:/Users/Shabrina Maharani/Documents/4th sem/STIMA/tubes/TUBES3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/AboutPageView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/maulvizm/Documents/GitHub/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/HomePageView.axaml]
+[C:/Users/Shabrina Maharani/Documents/4th sem/STIMA/tubes/TUBES3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/HomePageView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/maulvizm/Documents/GitHub/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/MainWindow.axaml]
+[C:/Users/Shabrina Maharani/Documents/4th sem/STIMA/tubes/TUBES3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/maulvizm/Documents/GitHub/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/ResultWindow.axaml]
+[C:/Users/Shabrina Maharani/Documents/4th sem/STIMA/tubes/TUBES3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/ResultWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/maulvizm/Documents/GitHub/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/SolverPageView.axaml]
+[C:/Users/Shabrina Maharani/Documents/4th sem/STIMA/tubes/TUBES3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/SolverPageView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
