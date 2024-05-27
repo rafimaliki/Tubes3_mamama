@@ -8,6 +8,7 @@ using static AvaloniaApplication3.Algorithm.MyRegex;
 using static AvaloniaApplication3.Utils.Result;
 using System.Linq;
 using Emgu.CV;
+using Microsoft.CodeAnalysis.Scripting.Hosting;
 
 namespace AvaloniaApplication3.Algorithm;
 
@@ -17,42 +18,48 @@ public class HammingDist
 {
     public static void findMatch(string pattern)
     {
-        Console.WriteLine("LVHS findMatch called");
+        Console.WriteLine("Hamming Distance Find Match:");
         DateTime startTime = DateTime.Now;
         
         List<SidikJari> sidikJariList = new List<SidikJari>(Database.SIDIK_JARI);
-        List<int> lvhsDistanceList = new List<int>();
+        List<int> hammingDistanceList = new List<int>();
 
         int loop = 0;
+        int match100 = 0;
         foreach (SidikJari sidikJari in sidikJariList)
         {
-            int lvhsDistance = lvhs(sidikJari.berkas_citra, pattern, sidikJari.berkas_citra.Length, pattern.Length);
-            lvhsDistanceList.Add(lvhsDistance);
+            int hammingDistance = hamming(ImageConverter.ImgPathToString(sidikJari.berkas_citra), pattern, ImageConverter.ImgPathToString(sidikJari.berkas_citra).Length, pattern.Length);
+            hammingDistanceList.Add(hammingDistance);
             
-            int percentage_ = (int) ((1 - (double)lvhsDistance / pattern.Length) * 100);
+            int percentage_ = (int) ((1 - (double)hammingDistance / pattern.Length) * 100);
             if (percentage_ > 50)
-            {
-                Console.WriteLine(percentage_);
+            {  
+                if (percentage_ == 100)
+                {
+                    match100++;
+                }
             }
         }
+        
+        Console.WriteLine("Match 100: " + match100);
         
         // find min distance
 
         int minIdx = 0;
-        for (int i = 0; i < lvhsDistanceList.Count; i++)
+        for (int i = 0; i < hammingDistanceList.Count; i++)
         {
-            if (lvhsDistanceList[i] < lvhsDistanceList[minIdx])
-            {
+            if (hammingDistanceList[i] < hammingDistanceList[minIdx])
+            {   
                 minIdx = i;
             }
         }
-        int percentage = (int) (1 - (double)lvhsDistanceList[minIdx] / pattern.Length) * 100;
+        int percentage = (int) ((1 - (double)hammingDistanceList[minIdx] / pattern.Length) * 100);
         
         foreach (Utils.People biodata in Database.BIODATA){
             try {
                 if (MyRegex.match(biodata.Nama, sidikJariList[minIdx].nama)) {
                     
-                    Result._image = Utils.Utils.ConvertToBitmap(Encoding.GetEncoding("iso-8859-1").GetBytes(sidikJariList[minIdx].berkas_citra));
+                    Result._image = Utils.Utils.ConvertToBitmap(Encoding.GetEncoding("iso-8859-1").GetBytes(ImageConverter.ImgPathToString(sidikJariList[minIdx].berkas_citra)));
 
                     DateTime endTime = DateTime.Now;
                     TimeSpan timeDiff = endTime - startTime;
@@ -73,7 +80,7 @@ public class HammingDist
         }
     }
 
-    public static int lvhs(string a, string b, int m, int n)
+    public static int hamming(string a, string b, int m, int n)
     {
         int countDiff = 0;
         for (int i = 0; i < Math.Min(m,n); i++)

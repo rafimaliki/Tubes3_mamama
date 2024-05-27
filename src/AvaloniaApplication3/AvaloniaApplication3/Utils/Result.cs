@@ -52,4 +52,11 @@ public class Result
     {
         Result.percentage = percentage;
     }
+
+    public static void print()
+    {
+        Console.WriteLine("Nama: " + _people.Nama);
+        Console.WriteLine("Tempat Lahir: " + _people.TempatLahir);
+        Console.WriteLine("Tanggal Lahir: " + _people.TanggalLahir);
+    }
 }

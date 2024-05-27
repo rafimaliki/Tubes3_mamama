@@ -18,7 +18,8 @@ public class KMP
         List<SidikJari> sidikJariList = new List<SidikJari>(Database.SIDIK_JARI);
         
         int patternLength = pattern.Length;
-        int setSize = 30;
+        int setSize = 60;
+        Console.WriteLine("Pattern Length: " + patternLength);
         
         int prevLen = sidikJariList.Count;
         int newLen = 0;
@@ -30,17 +31,21 @@ public class KMP
             string currentSet = pattern.Substring(patternLength/2+loop*setSize, setSize);
             prevLen = sidikJariList.Count;
 
-            sidikJariList = sidikJariList.Where(sidikJari => match(sidikJari.berkas_citra, currentSet)).ToList();
+            sidikJariList = sidikJariList.Where(sidikJari => match(ImageConverter.ImgPathToString(sidikJari.berkas_citra), currentSet)).ToList();
             
             newLen = sidikJariList.Count;
             patternLength = newLen;
             loop++;
+            Console.WriteLine(sidikJariList.Count);
         }
+            
+        Console.WriteLine(sidikJariList[0].nama);
+        
         foreach (Utils.People biodata in Database.BIODATA){
             try {
                 if (MyRegex.match(biodata.Nama, sidikJariList[0].nama)) {
                     
-                    Result._image = Utils.Utils.ConvertToBitmap(Encoding.GetEncoding("iso-8859-1").GetBytes(sidikJariList[0].berkas_citra));
+                    Result._image = Utils.Utils.ConvertToBitmap(Encoding.GetEncoding("iso-8859-1").GetBytes(ImageConverter.ImgPathToString(sidikJariList[0].berkas_citra)));
 
                     DateTime endTime = DateTime.Now;
                     TimeSpan timeDiff = endTime - startTime;
@@ -51,7 +56,8 @@ public class KMP
                     Result.createNewPeople(biodata);
                     Result.setName(sidikJariList[0].nama);
                     Result.percentage = 100;
-
+                    
+                    Console.WriteLine("Match found using KMP!");
                     return true;
                     
                     break;

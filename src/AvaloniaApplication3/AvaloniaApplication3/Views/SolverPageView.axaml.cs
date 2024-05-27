@@ -6,7 +6,6 @@ using Avalonia.Markup.Xaml;
 using Avalonia.Media.Imaging;
 using Avalonia.Platform.Storage;
 using Avalonia.ReactiveUI;
-using AvaloniaApplication3.Utils;
 using AvaloniaApplication3.ViewModels;
 using ReactiveUI;
 using AvaloniaApplication3.Algorithm;
@@ -61,7 +60,8 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
 
         _searchButton.Click += SearchButton_Click;
         _imageInputButton.Click += ImageInputButton_Click;
-
+        
+        // load database
         Database.Load();
     }
 
@@ -95,23 +95,22 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
                 _imageDisplay.Source = bitmap;
             }
 
-            byte[] b = Utils.Utils.ConvertToBinary(file.Path.ToString());
+            byte[] b = Utils.ImageConverter.PreprocessImage(file.Path.ToString());
             input_img = Encoding.GetEncoding("iso-8859-1").GetString(b);
                 
-            // Console.WriteLine(input_img.Length);
+            Console.WriteLine(input_img.Length);
         }
     }
 
 
     private void SearchButton_Click(object sender, RoutedEventArgs e)
-    {
+    {   
         if (_option1.IsChecked.Value)
         {
-            HammingDist.findMatch(input_img);
-            // Console.WriteLine("Search using KMP ");
-            // bool found = KMP.findMatch(input_img);
-            //
-            // if (!found) LVHS.findMatch(input_img);
+            bool found = KMP.findMatch(input_img);
+            // HammingDist.findMatch(input_img);
+            
+            if (!found) HammingDist.findMatch(input_img);
         }
         else if (_option2.IsChecked.Value)
         {

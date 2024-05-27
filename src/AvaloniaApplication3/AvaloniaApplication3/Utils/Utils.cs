@@ -7,9 +7,9 @@ using System.IO;
 
 public class Utils
 {
-    public static byte[] ConvertToBinary(string filePah)
+    public static byte[] ConvertToBinary(string filePath)
     {
-        string path = filePah.Replace("file:///", "");
+        string path = filePath.Replace("file:///", "");
 
         // if (path[0] != '/')
         // {

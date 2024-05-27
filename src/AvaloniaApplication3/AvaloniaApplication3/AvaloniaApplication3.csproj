@@ -24,6 +24,7 @@
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.10" />
         <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.10" />
         <PackageReference Include="Emgu.CV" Version="4.9.0.5494" />
+        <PackageReference Include="Emgu.CV.runtime.windows" Version="4.9.0.5494" />
         <PackageReference Include="MySqlConnector" Version="2.3.7" />
         <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
     </ItemGroup>
