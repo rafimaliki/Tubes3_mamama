@@ -55,7 +55,7 @@ public class BoyerMoore
                     Result.setName(sidikJariList[0].nama);
                     Result.percentage = 100;
                     
-                    Console.WriteLine("Match found using KMP!");
+                    Console.WriteLine("Match found using BM!");
                     return true;
                     
                     break;
