@@ -4,8 +4,6 @@ using AvaloniaApplication3.Struct;
 using System.Collections.Generic;
 using System.Text;
 using AvaloniaApplication3.Utils;
-using static AvaloniaApplication3.Algorithm.MyRegex;
-using static AvaloniaApplication3.Utils.Result;
 
 namespace AvaloniaApplication3.Algorithm;
 

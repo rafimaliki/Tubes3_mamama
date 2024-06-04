@@ -9,6 +9,7 @@ using Avalonia.ReactiveUI;
 using AvaloniaApplication3.ViewModels;
 using ReactiveUI;
 using AvaloniaApplication3.Algorithm;
+using AvaloniaApplication3.Utils;
 using System;
 using System.IO;
 using System.Linq;
@@ -105,17 +106,17 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
 
     private void SearchButton_Click(object sender, RoutedEventArgs e)
     {   
+        bool found = false;
+        
         if (_option1.IsChecked.Value)
         {
-            bool found = KMP.findMatch(input_img);
-            // HammingDist.findMatch(input_img);
-            
-            if (!found) HammingDist.findMatch(input_img);
+            found = KMP.findMatch(input_img);
         }
         else if (_option2.IsChecked.Value)
         {
-            // Do something else
+            found = BoyerMoore.findMatch(input_img);
         }
         
+        if (!found) HammingDist.findMatch(input_img);
     }
 }

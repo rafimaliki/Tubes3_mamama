@@ -1,18 +1,82 @@
 using System;
+using System.Linq;
+using AvaloniaApplication3.Struct;
+using System.Collections.Generic;
+using System.Text;
+using AvaloniaApplication3.Utils;
 
 namespace AvaloniaApplication3.Algorithm;
 
 public class BoyerMoore
 {
-    public static int BmMatch(string text, string pattern)
+     public static bool findMatch(string pattern)
+    {
+        DateTime startTime = DateTime.Now;
+        
+        List<SidikJari> sidikJariList = new List<SidikJari>(Database.SIDIK_JARI);
+        
+        int patternLength = pattern.Length;
+        int setSize = 60;
+        Console.WriteLine("Pattern Length: " + patternLength);
+        
+        int prevLen = sidikJariList.Count;
+        int newLen = 0;
+        
+        int loop = 0;
+        
+        while (sidikJariList.Count != 1 && prevLen != newLen && loop*setSize < patternLength/2)
+        {   
+            string currentSet = pattern.Substring(patternLength/2+loop*setSize, setSize);
+            prevLen = sidikJariList.Count;
+
+            sidikJariList = sidikJariList.Where(sidikJari => BmMatch(ImageConverter.ImgPathToString(sidikJari.berkas_citra), currentSet)).ToList();
+            
+            newLen = sidikJariList.Count;
+            patternLength = newLen;
+            loop++;
+            Console.WriteLine(sidikJariList.Count);
+        }
+            
+        Console.WriteLine(sidikJariList[0].nama);
+        
+        foreach (Utils.People biodata in Database.BIODATA){
+            try {
+                if (MyRegex.match(biodata.Nama, sidikJariList[0].nama)) {
+                    
+                    Result._image = Utils.Utils.ConvertToBitmap(Encoding.GetEncoding("iso-8859-1").GetBytes(ImageConverter.ImgPathToString(sidikJariList[0].berkas_citra)));
+
+                    DateTime endTime = DateTime.Now;
+                    TimeSpan timeDiff = endTime - startTime;
+        
+                    Result.timeDiff = timeDiff;
+                    Result.percentage = 0;
+                    
+                    Result.createNewPeople(biodata);
+                    Result.setName(sidikJariList[0].nama);
+                    Result.percentage = 100;
+                    
+                    Console.WriteLine("Match found using KMP!");
+                    return true;
+                    
+                    break;
+                }
+            } catch (Exception e){
+                Console.WriteLine(e.Message);
+            }
+           
+        }
+
+        return false;
+    }
+    public static bool BmMatch(string text, string pattern)
     {
         int[] last = BuildLast(pattern);
         int n = text.Length;
         int m = pattern.Length;
         int i = m - 1;
-        
+
         if (i > n - 1)
-            return -1; // no match if pattern is longer than text
+            return false;
         
         int j = m - 1;
         do
@@ -20,9 +84,9 @@ public class BoyerMoore
             if (pattern[j] == text[i])
             {
                 if (j == 0)
-                    return i; // match
+                    return true;
                 else
-                { 
+                {
                     i--;
                     j--;
                 }
@@ -34,8 +98,8 @@ public class BoyerMoore
                 j = m - 1;
             }
         } while (i <= n - 1);
-        
-        return -1; // no match
+
+        return false;
     }
 
     public static int[] BuildLast(string pattern)

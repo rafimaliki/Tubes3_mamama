@@ -1,18 +1,10 @@
 using System;
 using System.Collections.Generic;
-using Avalonia.Controls;
 using AvaloniaApplication3.Struct;
 using System.Text;
 using AvaloniaApplication3.Utils;
-using static AvaloniaApplication3.Algorithm.MyRegex;
-using static AvaloniaApplication3.Utils.Result;
-using System.Linq;
-using Emgu.CV;
-using Microsoft.CodeAnalysis.Scripting.Hosting;
 
 namespace AvaloniaApplication3.Algorithm;
-
-
 
 public class HammingDist
 {
@@ -41,10 +33,6 @@ public class HammingDist
             }
         }
         
-        Console.WriteLine("Match 100: " + match100);
-        
-        // find min distance
-
         int minIdx = 0;
         for (int i = 0; i < hammingDistanceList.Count; i++)
         {
@@ -69,8 +57,7 @@ public class HammingDist
                     
                     Result.createNewPeople(biodata);
                     Result.setName(sidikJariList[minIdx].nama);
-            
-   
+                    
                     break;
                 }
             } catch (Exception e){

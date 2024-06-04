@@ -1,6 +1,6 @@
 using AvaloniaApplication3.Utils;
 
-namespace AvaloniaApplication3.Algorithm;
+namespace AvaloniaApplication3.Utils;
 
 using System;
 using System.Collections.Generic;
