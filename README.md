@@ -14,5 +14,6 @@ Repository Tugas Besar 3 IF2211 Strategi Algoritma
 
 ### Run Program
 
-1. set working directory to project root (Tubes3_mamama/)
-2. run batch file (./run.bat)
+1. open terminal as administrator
+2. set working directory to project root (Tubes3_mamama/)
+3. run batch file (type ./run.bat)
