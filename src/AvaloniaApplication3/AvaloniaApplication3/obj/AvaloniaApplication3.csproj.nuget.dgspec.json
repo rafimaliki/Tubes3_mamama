@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj": {}
+    "C:\\Files\\Source-Code\\Kuliah\\Semester-IV\\IF2211-Srategi_Algoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj": {}
   },
   "projects": {
-    "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj": {
+    "C:\\Files\\Source-Code\\Kuliah\\Semester-IV\\IF2211-Srategi_Algoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj",
+        "projectUniqueName": "C:\\Files\\Source-Code\\Kuliah\\Semester-IV\\IF2211-Srategi_Algoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj",
         "projectName": "AvaloniaApplication3",
-        "projectPath": "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj",
-        "packagesPath": "/Users/maulvizm/.nuget/packages/",
-        "outputPath": "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/obj/",
+        "projectPath": "C:\\Files\\Source-Code\\Kuliah\\Semester-IV\\IF2211-Srategi_Algoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj",
+        "packagesPath": "C:\\Users\\Rafi\\.nuget\\packages\\",
+        "outputPath": "C:\\Files\\Source-Code\\Kuliah\\Semester-IV\\IF2211-Srategi_Algoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/maulvizm/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Rafi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -104,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

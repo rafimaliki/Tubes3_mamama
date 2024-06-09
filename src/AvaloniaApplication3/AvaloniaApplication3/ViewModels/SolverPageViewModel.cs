@@ -17,7 +17,7 @@ public class SolverPageViewModel : ViewModelBase
         
         OpenResultWindowCommand = ReactiveCommand.CreateFromTask( async () =>
         {
-            BaseResultViewModel store = Result.percentage >= 85 ? new ResultWindowViewModel() : new NoResultWindowViewModel();
+            BaseResultViewModel store = (Result.percentage >= 85 || Result.foundByAlgorithm) ? new ResultWindowViewModel() : new NoResultWindowViewModel();
             
             var result = await ShowDialog.Handle(store);
         });

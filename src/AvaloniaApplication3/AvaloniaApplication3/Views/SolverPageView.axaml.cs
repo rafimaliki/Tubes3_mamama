@@ -42,7 +42,7 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
         EmptyPageViewModel?> interaction){
         
         var window = this.VisualRoot as Window;
-        Window dialog = Result.percentage >= 85 ? new ResultWindow() : new NoResultWindow();
+        Window dialog = Result.percentage >= 85 || Result.foundByAlgorithm ? new ResultWindow() : new NoResultWindow();
         dialog.DataContext = interaction.Input;
 
         var result = await dialog.ShowDialog<EmptyPageViewModel?>(window);
@@ -105,6 +105,7 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
     private void SearchButton_Click(object sender, RoutedEventArgs e)
     {   
         bool found = false;
+        Result.foundByAlgorithm = false;
         
         if (_option1.IsChecked.Value)
         {

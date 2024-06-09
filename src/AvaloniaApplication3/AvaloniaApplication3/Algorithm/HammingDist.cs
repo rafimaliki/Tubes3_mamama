@@ -10,6 +10,7 @@ public class HammingDist
 {
     public static void findMatch(string pattern)
     {
+        Result.foundByAlgorithm = false;
         Console.WriteLine("Hamming Distance Find Match:");
         DateTime startTime = DateTime.Now;
         

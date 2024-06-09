@@ -71,6 +71,7 @@ public class KMP
         
                     Result.timeDiff = timeDiff;
                     Result.percentage = 0;
+                    Result.foundByAlgorithm = true;
                     
                     Result.createNewPeople(biodata);
                     Result.setName(sidikJariList[0].nama);

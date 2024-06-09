@@ -16,7 +16,7 @@
     </Design.DataContext>
     
     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBlock>Not Found or Percentage is below 85</TextBlock>
+        <TextBlock>Not Found</TextBlock>
     </StackPanel>
     
 </Window>

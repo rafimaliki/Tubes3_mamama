@@ -19,6 +19,8 @@ public class Result
     public Bitmap Image { get; set; }
     public string Text { get; set; }
     public People People { get; set; }
+
+    public static bool foundByAlgorithm = false;
     
     public Result(Bitmap image, string text, People people)
     {
