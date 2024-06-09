@@ -25,7 +25,7 @@ IF2211 Strategi Algoritma</h3>
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
-* [How To Run](#how-to-run:)
+* [How To Run](#how-to-run)
 * [Project Status](#project-status)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
@@ -60,7 +60,7 @@ IF2211 Strategi Algoritma</h3>
 ### About Us Page
 ![Example screenshot](/doc/aboutus.png)
 
-## How To Run:
+## How To Run
 
 ### Create MYSQL Database
 
