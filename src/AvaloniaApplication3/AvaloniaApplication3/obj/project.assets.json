@@ -388,6 +388,18 @@
           }
         }
       },
+      "Emgu.CV.runtime.mini.macos/4.9.0.5494": {
+        "type": "package",
+        "dependencies": {
+          "Emgu.CV": "4.9.0.5494"
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libcvextern.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          }
+        }
+      },
       "Emgu.CV.runtime.windows/4.9.0.5494": {
         "type": "package",
         "dependencies": {
@@ -2183,6 +2195,23 @@
         "lib/netstandard2.0/Emgu.CV.xml",
         "lib/xamarinios10/Emgu.CV.dll",
         "lib/xamarinios10/Emgu.CV.xml"
+      ]
+    },
+    "Emgu.CV.runtime.mini.macos/4.9.0.5494": {
+      "sha512": "kERi6BM+cuSDuoq7j8/HnUu+IeAucLMQqOpmWMcUMzGsQkxzBGyp5G/uZIFEcSVo5lkwc0ghig70Tlckigjolw==",
+      "type": "package",
+      "path": "emgu.cv.runtime.mini.macos/4.9.0.5494",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "docs/Darwin_arm64_version_string.inc",
+        "docs/Darwin_x64_version_string.inc",
+        "docs/README.md",
+        "emgu.cv.runtime.mini.macos.4.9.0.5494.nupkg.sha512",
+        "emgu.cv.runtime.mini.macos.nuspec",
+        "icon.png",
+        "runtimes/osx/native/libcvextern.dylib"
       ]
     },
     "Emgu.CV.runtime.windows/4.9.0.5494": {
@@ -5263,6 +5292,7 @@
       "Avalonia.ReactiveUI >= 11.0.10",
       "Avalonia.Themes.Fluent >= 11.0.10",
       "Emgu.CV >= 4.9.0.5494",
+      "Emgu.CV.runtime.mini.macos >= 4.9.0.5494",
       "Emgu.CV.runtime.windows >= 4.9.0.5494",
       "MySqlConnector >= 2.3.7",
       "System.Threading.Tasks.Extensions >= 4.5.4"
@@ -5330,6 +5360,10 @@
             "version": "[11.0.10, )"
           },
           "Emgu.CV": {
+            "target": "Package",
+            "version": "[4.9.0.5494, )"
+          },
+          "Emgu.CV.runtime.mini.macos": {
             "target": "Package",
             "version": "[4.9.0.5494, )"
           },

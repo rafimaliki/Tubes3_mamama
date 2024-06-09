@@ -16,8 +16,9 @@ public class Database
     public static List<SidikJari> SIDIK_JARI = new List<SidikJari>();
     
     public static void Load()
-    {
-        string connStr = "Server=localhost;Database=tubes3;User=root;Password=password";
+    {   
+        string password = "password";
+        string connStr = $"Server=localhost;Database=tubes3;User=root;Password={password}";
         using var cn = new MySqlConnection(connStr);
         cn.Open();
 

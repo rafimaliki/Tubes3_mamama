@@ -66,6 +66,10 @@
               "target": "Package",
               "version": "[4.9.0.5494, )"
             },
+            "Emgu.CV.runtime.mini.macos": {
+              "target": "Package",
+              "version": "[4.9.0.5494, )"
+            },
             "Emgu.CV.runtime.windows": {
               "target": "Package",
               "version": "[4.9.0.5494, )"

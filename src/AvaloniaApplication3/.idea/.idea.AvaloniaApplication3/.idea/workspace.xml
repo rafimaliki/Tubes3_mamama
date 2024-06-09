@@ -7,7 +7,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e28b48-2b2c-4044-89ac-5025ddbcef77" name="Changes" comment="" />
+    <list default="true" id="f8e28b48-2b2c-4044-89ac-5025ddbcef77" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../data/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AvaloniaApplication3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AvaloniaApplication3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/App.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/App.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/AvaloniaApplication3.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/AvaloniaApplication3.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Utils/Database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Utils/Database.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Utils/ImageConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Utils/ImageConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Views/AboutPageView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Views/AboutPageView.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Views/SolverPageView.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Views/SolverPageView.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/Avalonia/resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +53,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/rafimaliki/Tubes3_mamama.git&quot;,
-    &quot;accountId&quot;: &quot;40c74e95-1751-4a58-a228-b35ebf5b95e2&quot;
+    &quot;accountId&quot;: &quot;6f1707cc-59c4-4556-b035-6069574605da&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
@@ -52,7 +72,7 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2gIqilkUg9ron1VHoojPjgzjkBs" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -63,7 +83,7 @@
   "keyToString": {
     ".NET Project.AvaloniaApplication3.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,9 +94,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\Shabrina Maharani\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Shabrina Maharani\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Shabrina Maharani\\AppData\\Local\\Symbols\\src"
+      "/Users/maulvizm/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
+      "/Users/maulvizm/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
+      "/Users/maulvizm/Library/Application Support/Symbols/src"
     ]
   }
 }]]></component>
@@ -120,6 +140,7 @@
       <workItem from="1716197830174" duration="281000" />
       <workItem from="1716300355497" duration="114000" />
       <workItem from="1716300526088" duration="19323000" />
+      <workItem from="1717915437852" duration="7081000" />
     </task>
     <task id="LOCAL-00001" summary="feat: image converter">
       <option name="closed" value="true" />

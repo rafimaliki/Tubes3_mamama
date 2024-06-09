@@ -62,8 +62,6 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
         _searchButton.Click += SearchButton_Click;
         _imageInputButton.Click += ImageInputButton_Click;
         
-        // load database
-        Database.Load();
     }
 
     private async void ImageInputButton_Click(object sender, RoutedEventArgs e)
