@@ -74,8 +74,50 @@ def insert_fingerprint(nama, path):
     
     except mysql.connector.Error as err:
         print(f"Error: {err}")
+
+class sidik_jari:
+    def __init__(self, path, nama):
+        self.path = path
+        self.nama = nama
+    
+    
         
+def add_relative_path():
+    
+    # get all sidik jari and put to class sidik jari
+    try:
+        # Connect to the database
+        mydb = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            password="password",
+            database="tubes3alay"
+        )
+        
+        # Create cursor
+        mycursor = mydb.cursor()
+        
+        # Execute query to insert value to table fingerprint
+        sql = "SELECT * FROM sidik_jari"
+        mycursor.execute(sql)
+        myresult = mycursor.fetchall()
+        
+        list_sidik_jari = []
+        for x in myresult:
+            list_sidik_jari.append(sidik_jari(relative_path+x[0], x[1]))
             
+        # delete all data from tble sidik jari
+        sql = "DELETE FROM sidik_jari"
+        mycursor.execute(sql)
+        mydb.commit()
+        
+        # insert all data to table sidik jari
+        for sidik_jari in list_sidik_jari:
+            insert_fingerprint(sidik_jari.nama, sidik_jari.path)
+        
+    except mysql.connector.Error as err:
+        print(f"Error: {err}")
+        
             
 if __name__ == "__main__":
     get_nama()
