@@ -8,18 +8,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8e28b48-2b2c-4044-89ac-5025ddbcef77" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AvaloniaApplication3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AvaloniaApplication3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/BoyerMoore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/BoyerMoore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/KMP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/KMP.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/App.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/App.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/AvaloniaApplication3.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/AvaloniaApplication3.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Utils/Database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Utils/Database.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Utils/ImageConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Utils/ImageConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Views/AboutPageView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Views/AboutPageView.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Views/SolverPageView.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Views/SolverPageView.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/AvaloniaApplication3.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/Avalonia/resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,12 +53,12 @@
     &quot;assignee&quot;: &quot;maulvi-zm&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/rafimaliki/Tubes3_mamama.git&quot;,
-    &quot;accountId&quot;: &quot;40c74e95-1751-4a58-a228-b35ebf5b95e2&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/rafimaliki/Tubes3_mamama.git",
+    "accountId": "6f1707cc-59c4-4556-b035-6069574605da"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/Shabrina Maharani/Documents/4th sem/STIMA/tubes/TUBES3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/SolverPageView.axaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Shabrina Maharani/Documents/4th sem/STIMA/tubes/TUBES3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/SolverPageView.axaml.cs" root0="SKIP_HIGHLIGHTING" />
@@ -66,7 +75,7 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2gIqilkUg9ron1VHoojPjgzjkBs" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -88,9 +97,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\Shabrina Maharani\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Shabrina Maharani\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Shabrina Maharani\\AppData\\Local\\Symbols\\src"
+      "/Users/maulvizm/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
+      "/Users/maulvizm/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
+      "/Users/maulvizm/Library/Application Support/Symbols/src"
     ]
   }
 }]]></component>
@@ -134,6 +143,7 @@
       <workItem from="1716197830174" duration="281000" />
       <workItem from="1716300355497" duration="114000" />
       <workItem from="1716300526088" duration="19323000" />
+      <workItem from="1717915437852" duration="7081000" />
     </task>
     <task id="LOCAL-00001" summary="feat: image converter">
       <option name="closed" value="true" />

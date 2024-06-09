@@ -388,6 +388,18 @@
           }
         }
       },
+      "Emgu.CV.runtime.mini.macos/4.9.0.5494": {
+        "type": "package",
+        "dependencies": {
+          "Emgu.CV": "4.9.0.5494"
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libcvextern.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          }
+        }
+      },
       "Emgu.CV.runtime.windows/4.9.0.5494": {
         "type": "package",
         "dependencies": {
@@ -2183,6 +2195,23 @@
         "lib/netstandard2.0/Emgu.CV.xml",
         "lib/xamarinios10/Emgu.CV.dll",
         "lib/xamarinios10/Emgu.CV.xml"
+      ]
+    },
+    "Emgu.CV.runtime.mini.macos/4.9.0.5494": {
+      "sha512": "kERi6BM+cuSDuoq7j8/HnUu+IeAucLMQqOpmWMcUMzGsQkxzBGyp5G/uZIFEcSVo5lkwc0ghig70Tlckigjolw==",
+      "type": "package",
+      "path": "emgu.cv.runtime.mini.macos/4.9.0.5494",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "docs/Darwin_arm64_version_string.inc",
+        "docs/Darwin_x64_version_string.inc",
+        "docs/README.md",
+        "emgu.cv.runtime.mini.macos.4.9.0.5494.nupkg.sha512",
+        "emgu.cv.runtime.mini.macos.nuspec",
+        "icon.png",
+        "runtimes/osx/native/libcvextern.dylib"
       ]
     },
     "Emgu.CV.runtime.windows/4.9.0.5494": {
@@ -5263,25 +5292,26 @@
       "Avalonia.ReactiveUI >= 11.0.10",
       "Avalonia.Themes.Fluent >= 11.0.10",
       "Emgu.CV >= 4.9.0.5494",
+      "Emgu.CV.runtime.mini.macos >= 4.9.0.5494",
       "Emgu.CV.runtime.windows >= 4.9.0.5494",
       "MySqlConnector >= 2.3.7",
       "System.Threading.Tasks.Extensions >= 4.5.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rafi\\.nuget\\packages\\": {}
+    "/Users/maulvizm/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Files\\Source-Code\\Kuliah\\Semester-IV\\IF2211-Srategi_Algoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj",
+      "projectUniqueName": "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj",
       "projectName": "AvaloniaApplication3",
-      "projectPath": "C:\\Files\\Source-Code\\Kuliah\\Semester-IV\\IF2211-Srategi_Algoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj",
-      "packagesPath": "C:\\Users\\Rafi\\.nuget\\packages\\",
-      "outputPath": "C:\\Files\\Source-Code\\Kuliah\\Semester-IV\\IF2211-Srategi_Algoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\obj\\",
+      "projectPath": "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/AvaloniaApplication3.csproj",
+      "packagesPath": "/Users/maulvizm/.nuget/packages/",
+      "outputPath": "/Users/maulvizm/RiderProjects/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rafi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/maulvizm/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -5333,6 +5363,10 @@
             "target": "Package",
             "version": "[4.9.0.5494, )"
           },
+          "Emgu.CV.runtime.mini.macos": {
+            "target": "Package",
+            "version": "[4.9.0.5494, )"
+          },
           "Emgu.CV.runtime.windows": {
             "target": "Package",
             "version": "[4.9.0.5494, )"
@@ -5362,7 +5396,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

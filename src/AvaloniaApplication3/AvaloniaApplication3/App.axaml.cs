@@ -12,6 +12,9 @@ public partial class App : Application
     public override void Initialize()
     {
         AvaloniaXamlLoader.Load(this);
+        
+        // load database
+        Database.Load();
     }
 
     public override void OnFrameworkInitializationCompleted()

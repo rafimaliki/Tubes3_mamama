@@ -18,7 +18,16 @@ public class ImageConverter
         // Load image
         // Console.WriteLine(imagePath);
         // console current directory
-        imagePath = imagePath.Replace("file:///", "");
+        
+        if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+        {
+            imagePath = imagePath.Replace("file:///", "");
+        }
+        else
+        {
+            imagePath = imagePath.Replace("file://", "");
+        }
+        
         Mat image = CvInvoke.Imread(imagePath);
   
         // Convert image to grayscale
