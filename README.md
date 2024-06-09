@@ -16,4 +16,5 @@ Repository Tugas Besar 3 IF2211 Strategi Algoritma
 
 1. open terminal as administrator
 2. set working directory to project root (Tubes3_mamama/)
-3. run batch file (type ./run.bat)
+3. set DB_PASSWORD={your_mysql_password}
+4. run batch file (type ./run.bat)
