@@ -80,6 +80,12 @@ public class HammingDist
 
         return countDiff;
     }
+
+    public static int getPecentage(string a, string b)
+    {
+        int countDiff = hamming(a, b, a.Length, b.Length);
+        return (int) ((1 - (double)countDiff / a.Length) * 100);
+    }
 }
 
 

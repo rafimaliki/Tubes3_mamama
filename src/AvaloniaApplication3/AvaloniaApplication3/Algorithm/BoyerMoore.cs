@@ -56,7 +56,7 @@ public class BoyerMoore
                     
                     Result.createNewPeople(biodata);
                     Result.setName(sidikJariList[0].nama);
-                    Result.percentage = 100;
+                    Result.percentage = HammingDist.getPecentage(ImageConverter.ImgPathToString(sidikJariList[0].berkas_citra), pattern);
                     
                     Console.WriteLine("Match found using BM!");
                     return true;
