@@ -47,7 +47,7 @@ public class KMP
             Console.WriteLine(currentSet.Length);
             prevLen = sidikJariList.Count;
 
-            sidikJariList = sidikJariList.Where(sidikJari => match(ImageConverter.ImgPathToString(sidikJari.berkas_citra), currentSet)).ToList();
+            sidikJariList = sidikJariList.Where(sidikJari => match(sidikJari.berkas_citra, currentSet)).ToList();
             
             newLen = sidikJariList.Count;
             patternLength = newLen;
@@ -64,7 +64,7 @@ public class KMP
             try {
                 if (MyRegex.match(biodata.Nama, sidikJariList[0].nama)) {
                     
-                    Result._image = Utils.Utils.ConvertToBitmap(Encoding.GetEncoding("iso-8859-1").GetBytes(ImageConverter.ImgPathToString(sidikJariList[0].berkas_citra)));
+                    Result._image = Utils.Utils.ConvertToBitmap(Encoding.GetEncoding("iso-8859-1").GetBytes(sidikJariList[0].berkas_citra));
 
                     DateTime endTime = DateTime.Now;
                     TimeSpan timeDiff = endTime - startTime;
@@ -75,12 +75,11 @@ public class KMP
                     
                     Result.createNewPeople(biodata);
                     Result.setName(sidikJariList[0].nama);
-                    Result.percentage = HammingDist.getPecentage(ImageConverter.ImgPathToString(sidikJariList[0].berkas_citra), pattern);
+                    Result.percentage = HammingDist.getPecentage(sidikJariList[0].berkas_citra, pattern);
                     
                     Console.WriteLine("Match found using KMP!");
                     return true;
                     
-                    break;
                 }
             } catch (Exception e){
                 Console.WriteLine(e.Message);

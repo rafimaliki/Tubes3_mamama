@@ -56,7 +56,7 @@ public class ImageConverter
     public static string ImgPathToString(string imagePath)
     {   
 
-        byte[] binaryData = File.ReadAllBytes(imagePath);
+        byte[] binaryData = PreprocessImage(imagePath);
         String encoding = Encoding.GetEncoding("iso-8859-1").GetString(binaryData);
         
         return encoding;

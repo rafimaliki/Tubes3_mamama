@@ -29,7 +29,7 @@ public class BoyerMoore
             string currentSet = pattern.Substring(patternLength/2+loop*setSize+1078, setSize);
             prevLen = sidikJariList.Count;
 
-            sidikJariList = sidikJariList.Where(sidikJari => BmMatch(ImageConverter.ImgPathToString(sidikJari.berkas_citra), currentSet)).ToList();
+            sidikJariList = sidikJariList.Where(sidikJari => BmMatch(sidikJari.berkas_citra, currentSet)).ToList();
             
             newLen = sidikJariList.Count;
             patternLength = newLen;
@@ -46,7 +46,7 @@ public class BoyerMoore
             try {
                 if (MyRegex.match(biodata.Nama, sidikJariList[0].nama)) {
                     
-                    Result._image = Utils.Utils.ConvertToBitmap(Encoding.GetEncoding("iso-8859-1").GetBytes(ImageConverter.ImgPathToString(sidikJariList[0].berkas_citra)));
+                    Result._image = Utils.Utils.ConvertToBitmap(Encoding.GetEncoding("iso-8859-1").GetBytes(sidikJariList[0].berkas_citra));
 
                     DateTime endTime = DateTime.Now;
                     TimeSpan timeDiff = endTime - startTime;
@@ -57,7 +57,7 @@ public class BoyerMoore
                     Result.createNewPeople(biodata);
                     Result.setName(sidikJariList[0].nama);
                     Result.foundByAlgorithm = true;
-                    Result.percentage = HammingDist.getPecentage(ImageConverter.ImgPathToString(sidikJariList[0].berkas_citra), pattern);
+                    Result.percentage = HammingDist.getPecentage(sidikJariList[0].berkas_citra, pattern);
                     
                     Console.WriteLine("Match found using BM!");
                     return true;

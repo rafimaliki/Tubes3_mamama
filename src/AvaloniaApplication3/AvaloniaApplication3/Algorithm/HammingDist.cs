@@ -21,7 +21,7 @@ public class HammingDist
         int match100 = 0;
         foreach (SidikJari sidikJari in sidikJariList)
         {
-            int hammingDistance = hamming(ImageConverter.ImgPathToString(sidikJari.berkas_citra), pattern, ImageConverter.ImgPathToString(sidikJari.berkas_citra).Length, pattern.Length);
+            int hammingDistance = hamming(sidikJari.berkas_citra, pattern, sidikJari.berkas_citra.Length, pattern.Length);
             hammingDistanceList.Add(hammingDistance);
             
             int percentage_ = (int) ((1 - (double)hammingDistance / pattern.Length) * 100);
@@ -48,7 +48,7 @@ public class HammingDist
             try {
                 if (MyRegex.match(biodata.Nama, sidikJariList[minIdx].nama)) {
                     
-                    Result._image = Utils.Utils.ConvertToBitmap(Encoding.GetEncoding("iso-8859-1").GetBytes(ImageConverter.ImgPathToString(sidikJariList[minIdx].berkas_citra)));
+                    Result._image = Utils.Utils.ConvertToBitmap(Encoding.GetEncoding("iso-8859-1").GetBytes(sidikJariList[minIdx].berkas_citra));
 
                     DateTime endTime = DateTime.Now;
                     TimeSpan timeDiff = endTime - startTime;

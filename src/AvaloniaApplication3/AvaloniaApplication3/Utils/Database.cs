@@ -9,6 +9,7 @@ using static AvaloniaApplication3.Algorithm.MyRegex;
 using MySqlConnector;
 
 using AvaloniaApplication3.Struct;
+using Avalonia.Controls;
 
 public class Database
 {
@@ -60,7 +61,7 @@ public class Database
         
         while (reader.Read())
         {   
-            SidikJari sidikJari = new SidikJari(reader["berkas_citra"].ToString(), reader["nama"].ToString());
+            SidikJari sidikJari = new SidikJari(ImageConverter.ImgPathToString(reader["berkas_citra"].ToString()), reader["nama"].ToString());
             SIDIK_JARI.Add(sidikJari);
         }
         Console.WriteLine("SidikJari loaded! (" + SIDIK_JARI.Count + ")");
