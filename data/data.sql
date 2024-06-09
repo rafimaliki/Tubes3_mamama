@@ -1,6 +1,10 @@
 -- MariaDB dump 10.19-11.3.2-MariaDB, for Win64 (AMD64)
 --
+<<<<<<< HEAD
 -- Host: localhost    Database: tubes3
+=======
+-- Host: localhost    Database: tubes3alay
+>>>>>>> c4013acfbf7743ae5b2934c14a58e77d2dbbea69
 -- ------------------------------------------------------
 -- Server version	11.3.2-MariaDB
 
@@ -6680,4 +6684,8 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+<<<<<<< HEAD
 -- Dump completed on 2024-06-09 21:30:52
+=======
+-- Dump completed on 2024-05-27 11:28:12
+>>>>>>> c4013acfbf7743ae5b2934c14a58e77d2dbbea69

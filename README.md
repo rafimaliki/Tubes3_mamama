@@ -25,7 +25,7 @@ IF2211 Strategi Algoritma</h3>
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
-* [How To Run](#how-to-run:)
+* [How To Run](#how-to-run)
 * [Project Status](#project-status)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
@@ -33,7 +33,7 @@ IF2211 Strategi Algoritma</h3>
 
 
 ## About The Project
-<p align = "center"> This application implements a biometric identification system using fingerprint recognition. The system utilizes the Boyer-Moore and Knuth-Morris-Pratt algorithms for fingerprint detection and matching. Additionally, the system is integrated with a database containing individual identities, enabling the complete identification of a person using only their fingerprint. This project aims to create a robust and efficient fingerprint recognition system that links biometric data with personal identity information, ensuring accurate and reliable individual identification. </p>
+<p align = "center"> This application implements a biometric identification system using fingerprint recognition. The system utilizes the Boyer-Moore and Knuth-Morris-Pratt algorithms for fingerprint detection and matching. The Knuth-Morris-Pratt (KMP) algorithm is an efficient pattern matching algorithm that preprocesses the pattern to create a partial match table, allowing the search to skip sections of the text, thus improving search performance. The Boyer-Moore (BM) algorithm is another efficient pattern matching algorithm that preprocesses the pattern to create two heuristics, the bad character rule and the good suffix rule, which help in skipping sections of the text during the search process, making it faster, especially with larger patterns. Additionally, regular expressions are used to handle corrupted name data, ensuring that even with inconsistencies or variations in the name entries, the system can still perform accurate matches. The system is integrated with a database containing individual identities, enabling the complete identification of a person using only their fingerprint. This project aims to create a robust and efficient fingerprint recognition system that links biometric data with personal identity information, ensuring accurate and reliable individual identification. </p>
 
 
 ## Technologies Used
@@ -52,30 +52,58 @@ IF2211 Strategi Algoritma</h3>
 
 ## Screenshots
 ### Home Page
-![Example screenshot](/img/homepage.png)
+![Example screenshot](/doc/homepage.png)
 
 ### Solver Page
-![Example screenshot](/img/solverpage.png)
+![Example screenshot](/doc/solverpage.png)
 
 ### About Us Page
-![Example screenshot](/img/aboutus.png)
+![Example screenshot](/doc/aboutus.png)
 
-## How To Run:
+## How To Run
 
-### Create MYSQL Database
+### Create MYSQL Database (First time only)
 
-1. cd data
-2. open mysql
-3. create database tubes3
-4. source data.sql
-5. exit
+change working directory to data/
+```sh
+cd Tubes3_mamama/data
+```
+open mysql
+```sh
+mysql -u root -p
+```
+create new database named tubes3
+```sh
+create database tubes3
+```
+use the database
+```sh
+use tubes3
+```
+source dumped data
+```sh
+source data.sql
+```
+exit
 
 ### Run Program
+open terminal as administrator
+set working directory to project root (Tubes3_mamama/)
+```sh
+cd Tubes3_mamama/
+```
+set DB_PASSWORD environment variable
+```sh
+set DB_PASSWORD={your_mysql_password}
+```
+run batch file
+```sh
+# for Windows
+run.bat
 
-1. open terminal as administrator
-2. set working directory to project root (Tubes3_mamama/)
-3. set DB_PASSWORD={your_mysql_password}
-4. run batch file (type ./run.bat)
+# for MacOS
+run.sh
+```
 
 
 ## Project Status
