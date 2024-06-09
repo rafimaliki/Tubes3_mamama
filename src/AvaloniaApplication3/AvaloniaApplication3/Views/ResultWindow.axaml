@@ -4,7 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModels="clr-namespace:AvaloniaApplication3.ViewModels"
         mc:Ignorable="d"
-        Width="500"
+        Width="600"
         Height="300"
         x:Class="AvaloniaApplication3.Views.ResultWindow"
         x:DataType="viewModels:ResultWindowViewModel"
@@ -26,7 +26,7 @@
             </ExperimentalAcrylicBorder.Material>
         </ExperimentalAcrylicBorder>
         
-        <Grid Column="2" ColumnDefinitions="200, 300">
+        <Grid Column="2" ColumnDefinitions="200, 400">
             <StackPanel Grid.Column="0" Background="Transparent" Margin="20 0 0 0 " VerticalAlignment="Center">
                 <Image Source="{Binding Image}" HorizontalAlignment="Center"></Image>
                 <Grid>

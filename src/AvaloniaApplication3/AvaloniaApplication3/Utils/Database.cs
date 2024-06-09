@@ -17,7 +17,12 @@ public class Database
     
     public static void Load()
     {   
-        string password = "password";
+        string password = "";
+ 
+        if (Environment.GetEnvironmentVariable("DB_PASSWORD") != null)
+        {
+            password = Environment.GetEnvironmentVariable("DB_PASSWORD");
+        }
         string connStr = $"Server=localhost;Database=tubes3;User=root;Password={password}";
         using var cn = new MySqlConnection(connStr);
         cn.Open();
