@@ -60,10 +60,10 @@
     <setting file="mock://C:/Users/Shabrina Maharani/Documents/4th sem/STIMA/tubes/TUBES3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/SolverPageView.axaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Shabrina Maharani/Documents/4th sem/STIMA/tubes/TUBES3/Tubes3_mamama/src/AvaloniaApplication3/AvaloniaApplication3/Views/SolverPageView.axaml.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
