@@ -37,7 +37,10 @@ public class KMP
             Console.WriteLine(sidikJariList.Count);
         }
             
-        Console.WriteLine(sidikJariList[0].nama);
+        if (sidikJariList.Count == 0) {
+            Console.WriteLine("No match found using KMP!");
+            return false;
+        }
         
         foreach (Utils.People biodata in Database.BIODATA){
             try {

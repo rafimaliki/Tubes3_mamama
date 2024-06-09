@@ -10,11 +10,7 @@
     <list default="true" id="f8e28b48-2b2c-4044-89ac-5025ddbcef77" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AvaloniaApplication3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AvaloniaApplication3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/BoyerMoore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/BoyerMoore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/Database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Utils/Database.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/HammingDist.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/HammingDist.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/KMP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/KMP.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/MyRegex.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Utils/MyRegex.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Views/SolverPageView.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Views/SolverPageView.axaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
@@ -134,7 +130,8 @@
       <workItem from="1716296286822" duration="6669000" />
       <workItem from="1716358020962" duration="853000" />
       <workItem from="1716781389660" duration="6184000" />
-      <workItem from="1717496111053" duration="521000" />
+      <workItem from="1717496111053" duration="1092000" />
+      <workItem from="1717913192382" duration="363000" />
     </task>
     <servers />
   </component>

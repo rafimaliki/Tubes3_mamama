@@ -37,7 +37,10 @@ public class BoyerMoore
             Console.WriteLine(sidikJariList.Count);
         }
             
-        Console.WriteLine(sidikJariList[0].nama);
+        if (sidikJariList.Count == 0) {
+            Console.WriteLine("No match found using BM!");
+            return false;
+        }
         
         foreach (Utils.People biodata in Database.BIODATA){
             try {
@@ -57,8 +60,6 @@ public class BoyerMoore
                     
                     Console.WriteLine("Match found using BM!");
                     return true;
-                    
-                    break;
                 }
             } catch (Exception e){
                 Console.WriteLine(e.Message);
