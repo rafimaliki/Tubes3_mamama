@@ -8,10 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8e28b48-2b2c-4044-89ac-5025ddbcef77" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/HammingDist.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/HammingDist.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/KMP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/Algorithm/KMP.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/Debug/net8.0/AvaloniaApplication3.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AvaloniaApplication3/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
   &quot;keyToString&quot;: {
     &quot;.NET Project.AvaloniaApplication3.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;merge&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -130,7 +130,7 @@
       <workItem from="1716358020962" duration="853000" />
       <workItem from="1716781389660" duration="6184000" />
       <workItem from="1717496111053" duration="1092000" />
-      <workItem from="1717913192382" duration="690000" />
+      <workItem from="1717913192382" duration="1172000" />
     </task>
     <servers />
   </component>
