@@ -91,7 +91,7 @@ def add_relative_path():
             host="localhost",
             user="root",
             password="password",
-            database="tubes3alay"
+            database="tubes3"
         )
         
         # Create cursor
