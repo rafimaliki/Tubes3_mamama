@@ -110,6 +110,7 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
         
         if (_option1.IsChecked.Value)
         {
+            Console.WriteLine("KMP Algorithm selected!");
             found = KMP.findMatch(input_img);
         }
         else if (_option2.IsChecked.Value)

@@ -26,7 +26,7 @@ public class BoyerMoore
         
         while (sidikJariList.Count != 1 && prevLen != newLen && loop*setSize < patternLength/2)
         {   
-            string currentSet = pattern.Substring(patternLength/2+loop*setSize, setSize);
+            string currentSet = pattern.Substring(patternLength/2+loop*setSize+1078, setSize);
             prevLen = sidikJariList.Count;
 
             sidikJariList = sidikJariList.Where(sidikJari => BmMatch(ImageConverter.ImgPathToString(sidikJari.berkas_citra), currentSet)).ToList();

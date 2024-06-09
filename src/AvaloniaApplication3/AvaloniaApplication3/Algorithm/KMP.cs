@@ -4,6 +4,7 @@ using AvaloniaApplication3.Struct;
 using System.Collections.Generic;
 using System.Text;
 using AvaloniaApplication3.Utils;
+using Microsoft.CodeAnalysis.Scripting.Hosting;
 
 namespace AvaloniaApplication3.Algorithm;
 
@@ -12,6 +13,20 @@ public class KMP
     public static bool findMatch(string pattern)
     {
         DateTime startTime = DateTime.Now;
+
+        // int counter = 0;
+        // foreach (char c in pattern)
+        // {
+        //     if (c == '\0')
+        //     {
+        //         Console.Write('X');
+        //     }
+        //     else {
+        //         Console.Write(c);
+        //     }
+        //     Console.Write(counter);
+        //     counter++;
+        // }
         
         List<SidikJari> sidikJariList = new List<SidikJari>(Database.SIDIK_JARI);
         
@@ -26,7 +41,10 @@ public class KMP
         
         while (sidikJariList.Count != 1 && prevLen != newLen && loop*setSize < patternLength/2)
         {   
-            string currentSet = pattern.Substring(patternLength/2+loop*setSize, setSize);
+            string currentSet = pattern.Substring(patternLength/2+loop*setSize+1078, setSize);
+            Console.WriteLine("Pattern");
+            Console.WriteLine(currentSet);
+            Console.WriteLine(currentSet.Length);
             prevLen = sidikJariList.Count;
 
             sidikJariList = sidikJariList.Where(sidikJari => match(ImageConverter.ImgPathToString(sidikJari.berkas_citra), currentSet)).ToList();
@@ -36,7 +54,7 @@ public class KMP
             loop++;
             Console.WriteLine(sidikJariList.Count);
         }
-            
+
         if (sidikJariList.Count == 0) {
             Console.WriteLine("No match found using KMP!");
             return false;
