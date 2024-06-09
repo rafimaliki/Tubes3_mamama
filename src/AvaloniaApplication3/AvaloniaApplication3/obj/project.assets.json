@@ -5365,5 +5365,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Files\\Source-Code\\Kuliah\\Semester-IV\\IF2211-Srategi_Algoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

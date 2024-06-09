@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K9kAYJzwiIWyPNcr4XyE3+ixcrm5bUM6Ff5LgQHn9U5ONdKSF9Fnt4nycSS/glJuH09wo9kJPa7aA/86vFloSA==",
+  "dgSpecHash": "J81AiTKOs5p9zD9Cdgsq/Mc9fi0iT92KLbcHDosmOa1BwtXjhwHAqKOmo6kXzBi8C8FC5rq1qiSL8mx+3NX2vg==",
   "success": true,
   "projectFilePath": "C:\\Files\\Source-Code\\Kuliah\\Semester-IV\\IF2211-Srategi_Algoritma\\Tubes3\\Tubes3_mamama\\src\\AvaloniaApplication3\\AvaloniaApplication3\\AvaloniaApplication3.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,8 @@
     "C:\\Users\\Rafi\\.nuget\\packages\\avalonia.x11\\11.0.10\\avalonia.x11.11.0.10.nupkg.sha512",
     "C:\\Users\\Rafi\\.nuget\\packages\\dynamicdata\\7.9.5\\dynamicdata.7.9.5.nupkg.sha512",
     "C:\\Users\\Rafi\\.nuget\\packages\\emgu.cv\\4.9.0.5494\\emgu.cv.4.9.0.5494.nupkg.sha512",
-    "C:\\Users\\Rafi\\.nuget\\packages\\emgu.cv.runtime.windows\\4.9.0.5494\\emgu.cv.runtime.windows.4.9.0.5494.nupkg.sha512",
+    "C:\\Users\\Rafi\\.nuget\\packages\\emgu.cv.runtime.mini.macos\\4.9.0.5494\\emgu.cv.runtime.mini.macos.4.9.0.5494.nupkg.sha512",
+    "C:\\Users\\Rafi\\.nuget\\packages\\emgu.cv.runtime.mini.windows\\4.9.0.5494\\emgu.cv.runtime.mini.windows.4.9.0.5494.nupkg.sha512",
     "C:\\Users\\Rafi\\.nuget\\packages\\emgu.runtime.windows.msvc.rt.arm64\\19.39.33523\\emgu.runtime.windows.msvc.rt.arm64.19.39.33523.nupkg.sha512",
     "C:\\Users\\Rafi\\.nuget\\packages\\emgu.runtime.windows.msvc.rt.x64\\19.39.33523\\emgu.runtime.windows.msvc.rt.x64.19.39.33523.nupkg.sha512",
     "C:\\Users\\Rafi\\.nuget\\packages\\emgu.runtime.windows.msvc.rt.x86\\19.39.33523\\emgu.runtime.windows.msvc.rt.x86.19.39.33523.nupkg.sha512",
