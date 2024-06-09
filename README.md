@@ -52,13 +52,13 @@ IF2211 Strategi Algoritma</h3>
 
 ## Screenshots
 ### Home Page
-![Example screenshot](/img/homepage.png)
+![Example screenshot](/doc/homepage.png)
 
 ### Solver Page
-![Example screenshot](/img/solverpage.png)
+![Example screenshot](/doc/solverpage.png)
 
 ### About Us Page
-![Example screenshot](/img/aboutus.png)
+![Example screenshot](/doc/aboutus.png)
 
 ## How To Run:
 
