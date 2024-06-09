@@ -62,20 +62,48 @@ IF2211 Strategi Algoritma</h3>
 
 ## How To Run
 
-### Create MYSQL Database
+### Create MYSQL Database (First time only)
 
-1. cd data
-2. open mysql
-3. create database tubes3
-4. source data.sql
-5. exit
+change working directory to data/
+```sh
+cd Tubes3_mamama/data
+```
+open mysql
+```sh
+mysql -u root -p
+```
+create new database named tubes3
+```sh
+create database tubes3
+```
+use the database
+```sh
+use tubes3
+```
+source dumped data
+```sh
+source data.sql
+```
+exit
 
 ### Run Program
+open terminal as administrator
+set working directory to project root (Tubes3_mamama/)
+```sh
+cd Tubes3_mamama/
+```
+set DB_PASSWORD environment variable
+```sh
+set DB_PASSWORD={your_mysql_password}
+```
+run batch file
+```sh
+# for Windows
+run.bat
 
-1. open terminal as administrator
-2. set working directory to project root (Tubes3_mamama/)
-3. set DB_PASSWORD={your_mysql_password}
-4. run batch file (type ./run.bat)
+# for MacOS
+run.sh
+```
 
 
 ## Project Status
