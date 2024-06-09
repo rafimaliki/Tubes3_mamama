@@ -38,11 +38,11 @@ public partial class SolverPageView : ReactiveUserControl<SolverPageViewModel>
             action(ViewModel!.ShowDialog.RegisterHandler(DoShowDialogAsync)));
     }
     
-    private async Task DoShowDialogAsync(InteractionContext<ResultWindowViewModel,
+    private async Task DoShowDialogAsync(InteractionContext<BaseResultViewModel,
         EmptyPageViewModel?> interaction){
         
         var window = this.VisualRoot as Window;
-        var dialog = new ResultWindow();
+        Window dialog = Result.percentage >= 85 ? new ResultWindow() : new NoResultWindow();
         dialog.DataContext = interaction.Input;
 
         var result = await dialog.ShowDialog<EmptyPageViewModel?>(window);

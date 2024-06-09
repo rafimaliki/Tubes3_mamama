@@ -7,6 +7,8 @@
         <entry key="AvaloniaApplication3/Views/AboutPageView.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
         <entry key="AvaloniaApplication3/Views/HomePageView.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
         <entry key="AvaloniaApplication3/Views/MainWindow.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/Views/NoResultWindow.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/Views/NoResultWindowView.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
         <entry key="AvaloniaApplication3/Views/ResultWindow.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
         <entry key="AvaloniaApplication3/Views/SolverPageView.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
       </map>

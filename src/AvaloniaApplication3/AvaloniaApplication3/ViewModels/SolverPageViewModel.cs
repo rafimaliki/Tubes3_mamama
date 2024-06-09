@@ -1,5 +1,6 @@
 using System.Reactive.Linq;
 using System.Windows.Input;
+using AvaloniaApplication3.Utils;
 using ReactiveUI;
 
 namespace AvaloniaApplication3.ViewModels;
@@ -8,15 +9,16 @@ public class SolverPageViewModel : ViewModelBase
 {
     public ICommand OpenResultWindowCommand { get; }
 
-    public Interaction<ResultWindowViewModel, EmptyPageViewModel?> ShowDialog { get; }
+    public Interaction<BaseResultViewModel, EmptyPageViewModel?> ShowDialog { get; }
     
     public SolverPageViewModel()
     {
-        ShowDialog = new Interaction<ResultWindowViewModel, EmptyPageViewModel?>();
+        ShowDialog = new Interaction<BaseResultViewModel, EmptyPageViewModel?>();
         
         OpenResultWindowCommand = ReactiveCommand.CreateFromTask( async () =>
         {
-            var store = new ResultWindowViewModel();
+            BaseResultViewModel store = Result.percentage >= 85 ? new ResultWindowViewModel() : new NoResultWindowViewModel();
+            
             var result = await ShowDialog.Handle(store);
         });
     }

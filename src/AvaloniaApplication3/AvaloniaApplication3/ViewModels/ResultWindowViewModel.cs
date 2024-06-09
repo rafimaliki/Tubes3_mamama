@@ -1,10 +1,12 @@
 using System;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using Avalonia.Media.Imaging;
 using AvaloniaApplication3.Helpers;
 using AvaloniaApplication3.Utils;
 namespace AvaloniaApplication3.ViewModels;
 
-public class ResultWindowViewModel : ViewModelBase
+public class ResultWindowViewModel : BaseResultViewModel
 {
     public Bitmap Image => Result._image;
 
